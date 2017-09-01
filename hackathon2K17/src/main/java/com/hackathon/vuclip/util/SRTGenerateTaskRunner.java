@@ -116,7 +116,7 @@ public class SRTGenerateTaskRunner implements Runnable {
 				writer.close();
 				recognizer.stopRecognition();
 
-				System.out.println("Done");
+			System.out.println("Done");
 			} catch (IOException e) {
 				e.printStackTrace();
 			}
@@ -128,7 +128,7 @@ public class SRTGenerateTaskRunner implements Runnable {
 			e1.printStackTrace();
 		}
 
-		System.out.println(name + " is running");
+		System.out.println(name + " is stopped");
 
 	}
 
