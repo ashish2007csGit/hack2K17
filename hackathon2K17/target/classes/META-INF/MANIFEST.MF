@@ -1,9 +1,9 @@
 Manifest-Version: 1.0
 Implementation-Title: hackathon2K17
 Implementation-Version: 0.0.1-SNAPSHOT
-Built-By: vuclip
+Built-By: IT000417
 Implementation-Vendor-Id: com.example
-Build-Jdk: 1.8.0_131
+Build-Jdk: 1.8.0_144
 Implementation-URL: http://projects.spring.io/spring-boot/hackathon2K1
  7/
 Created-By: Maven Integration for Eclipse

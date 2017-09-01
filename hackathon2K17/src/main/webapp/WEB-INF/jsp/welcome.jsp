@@ -1,48 +1,53 @@
-<!DOCTYPE html>
-<%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<!doctype html>
+
 <html lang="en">
 <head>
+<meta charset="utf-8">
+<title>Video Player</title>
 
-	<!-- Access the bootstrap Css like this,
-		Spring boot will handle the resource mapping automcatically -->
-	<link rel="stylesheet" type="text/css" href="webjars/bootstrap/3.3.7/css/bootstrap.min.css" />
-
-	<!--
-	<spring:url value="/css/main.css" var="springCss" />
-	<link href="${springCss}" rel="stylesheet" />
-	 -->
-	<c:url value="/css/main.css" var="jstlCss" />
-	<link href="${jstlCss}" rel="stylesheet" />
-
+<link rel="stylesheet"
+	href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+<link rel="stylesheet"
+	href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet"
+	href="https://code.getmdl.io/1.3.0/material.deep_purple-pink.min.css">
+<link rel="stylesheet" href="styles.css">
+<style>
+#view-source {
+	position: fixed;
+	display: block;
+	right: 0;
+	bottom: 0;
+	margin-right: 40px;
+	margin-bottom: 40px;
+	z-index: 900;
+}
+</style>
 </head>
-<body>
-
-	<nav class="navbar navbar-inverse">
-		<div class="container">
-			<div class="navbar-header">
-				<a class="navbar-brand" href="#">Spring Boot</a>
+<body
+	class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
+	<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+		<header
+			class="mdl-layout__header mdl-layout__header--scroll mdl-color--primary">
+			<div class="mdl-layout--large-screen-only mdl-layout__header-row">
 			</div>
-			<div id="navbar" class="collapse navbar-collapse">
-				<ul class="nav navbar-nav">
-					<li class="active"><a href="#">Home</a></li>
-					<li><a href="#about">About</a></li>
-				</ul>
+			<div class="mdl-layout--large-screen-only mdl-layout__header-row">
+				<h3>Video Library</h3>
 			</div>
-		</div>
-	</nav>
+			<div class="mdl-layout--large-screen-only mdl-layout__header-row">
+			</div>
+		</header>
 
-	<div class="container">
 
-		<div class="starter-template">
-			<h1>Hackathon</h1>
-			<h2>Message: ${message}</h2>
-		</div>
+		<main class="mdl-layout__content"> 
+			<p>Welcome page</p>
+		</main>
 
+		<footer class="mdl-mega-footer">
+			<p>All rights reserved by @SaaStars team</p>
+		</footer>
+		</main>
 	</div>
-
-	<script type="text/javascript" src="webjars/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
+	<script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
 </body>
-
 </html>
