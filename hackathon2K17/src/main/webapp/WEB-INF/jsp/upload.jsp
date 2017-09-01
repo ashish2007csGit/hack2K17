@@ -43,14 +43,13 @@
                <div class = "mdl-cell mdl-cell--4-col"></div>
                <div class = "mdl-cell mdl-cell--4-col">
                
-               	<form action="/uploadVideo" method="post">
+               	<form action="/uploadVideo" method="post" enctype="multipart/form-data">
                		
-               		<div class = "mdl-textfield mdl-js-textfield">
-                     <input class = "mdl-textfield__input" type = "file" id = "file">
+                     <input type = "file" name ="file" id = "uploadBtn">
                   </div>
-                  <div class = "mdl-textfield mdl-js-textfield">
-                  	<input class= "mdl-button mdl-js-button mdl-button--raised mdl-button--colored" type="submit" value="Upload">
-                  </div>
+                  <button class="mdl-button mdl-js-button mdl-button--fab">
+						<i class="material-icons">file_upload</i>
+					</button>
                		
                	</form>
                
