@@ -18,5 +18,17 @@ public class WelcomeController {
 		model.put("message", this.message);
 		return "welcome";
 	}
+	
+	@RequestMapping("/home")
+	public String home(Map<String, Object> model) {
+		//model.put("message", this.message);
+		return "home";
+	}
+	
+	@RequestMapping("/upload")
+	public String upload(Map<String, Object> model) {
+		//model.put("message", this.message);
+		return "upload";
+	}
 
 }
