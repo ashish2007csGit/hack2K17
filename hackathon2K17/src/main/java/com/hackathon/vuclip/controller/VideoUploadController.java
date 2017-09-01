@@ -1,5 +1,6 @@
 package com.hackathon.vuclip.controller;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -7,6 +8,9 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
+import com.hackathon.vuclip.service.SrtGenerate;
+
+import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -17,6 +21,9 @@ public class VideoUploadController {
 	// Save the uploaded file to this folder
 	private static String UPLOADED_FOLDER = "src//main//resources//static//video//";
 
+	@Autowired
+	SrtGenerate srtGenerator;
+	
 	@GetMapping("/upload")
 	public String index() {
 		return "upload";
@@ -43,6 +50,11 @@ public class VideoUploadController {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+		
+		File videoFile = new File(UPLOADED_FOLDER + file.getOriginalFilename());
+		File audioFile = srtGenerator.extractAudioFromVideo(videoFile);
+		srtGenerator.generateSrtFile(audioFile, videoFile.getAbsolutePath());
+		
 
 		return "redirect:/uploadStatus";
 	}
