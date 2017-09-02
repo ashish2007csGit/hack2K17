@@ -37,27 +37,28 @@
 			<div class="mdl-layout--large-screen-only mdl-layout__header-row">
 			</div>
 		</header>
-		<main class="mdl-layout__content"> 
-			
-			<div class = "mdl-grid">
-               <div class = "mdl-cell mdl-cell--4-col"></div>
-               <div class = "mdl-cell mdl-cell--4-col">
-               
-               	<form action="/uploadVideo" method="post" enctype="multipart/form-data">
-               		
-                     <input type = "file" name ="file" id = "uploadBtn">
-                  </div>
-                  <button class="mdl-button mdl-js-button mdl-button--fab">
-						<i class="material-icons">file_upload</i>
-					</button>
-               		
-               	</form>
-               
-               
-               </div>
-               <div class = "mdl-cell mdl-cell--4-col"></div>
-            </div>
-			
+		<main class="mdl-layout__content">
+
+		<div class="mdl-grid">
+			<div class="mdl-cell mdl-cell--4-col"></div>
+			<div class="mdl-cell mdl-cell--4-col">
+
+				<form action="/uploadVideo" method="post"
+					enctype="multipart/form-data">
+					<div>
+						<input type="file" name="file" id="uploadBtn" accept="video/*">
+
+						<button class="mdl-button mdl-js-button mdl-button--fab">
+							<i class="material-icons">file_upload</i>
+						</button>
+					</div>
+				</form>
+
+
+			</div>
+			<div class="mdl-cell mdl-cell--4-col"></div>
+		</div>
+
 		</main>
 
 

@@ -79,7 +79,7 @@ public class SRTGenerateTaskRunner implements Runnable {
 			//File convertedFile = 
 			File audioFile = extractAudioFromVideo(file);
 			Configuration configuration = new Configuration();
-			String videoFileName = file.getName();
+			String videoFileName = AppConstants.UPLOADED_FOLDER_SUBTITLE + file.getName();
 
 			configuration.setAcousticModelPath("resource:/edu/cmu/sphinx/models/en-us/en-us");
 			configuration.setDictionaryPath("resource:/edu/cmu/sphinx/models/en-us/cmudict-en-us.dict");
@@ -95,13 +95,14 @@ public class SRTGenerateTaskRunner implements Runnable {
 				SpeechResult result;
 
 				int line_number = 1;
-				PrintWriter writer = new PrintWriter(videoFileName.substring(0, videoFileName.length() - 4) + ".srt",
+				PrintWriter writer = new PrintWriter(videoFileName.substring(0, videoFileName.length() - 4) + ".vtt",
 						"UTF-8");
-
+				writer.println("WEBVTT");
+				writer.println();
 				while ((result = recognizer.getResult()) != null) {
 
 					List<WordResult> list = result.getWords();
-
+					
 					if (!list.isEmpty()) {
 						int numOfWords = list.size();
 						writer.println(line_number);
@@ -156,7 +157,7 @@ System.out.println("audioFile "+audioFile.getAbsolutePath());
 	}
 
 	private static String formatTime(long n) {
-		return DurationFormatUtils.formatDuration(n, "HH:mm:ss,SSS");
+		return DurationFormatUtils.formatDuration(n, "HH:mm:ss.SSS");
 	}
 
 	/*public File convert(MultipartFile file) throws IllegalStateException, IOException
