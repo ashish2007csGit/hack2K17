@@ -1,0 +1,66 @@
+WDBNDRY_B
+WDBNDRY_E
+WDBNDRY_S
+WDBNDRY_I
+SILENCE   SIL
+QUESTION0_0_R  a aa ai au d: dh~ d~ e e- ei g~ h h: i ii j~ k~ l n n: nd~ nj~ o oo r s sh shh u uu y
+QUESTION0_1_R  h h: l n n: s sh shh
+QUESTION0_2_R  a aa ai au d: dh~ d~ e e- ei g~ i ii j~ k~ nd~ nj~ o oo r u uu y
+QUESTION0_3_R  e ei i ii y
+QUESTION0_4_R  i ii
+QUESTION0_5_R  e ei y
+QUESTION0_6_R  e ei
+QUESTION0_7_R  a aa ai au d: dh~ d~ e- g~ j~ k~ nd~ nj~ o oo r u uu
+QUESTION0_8_R  a ai au d: dh~ d~ e- g~ j~ k~ nd~ nj~ o oo r u uu
+QUESTION0_9_R  a au d: dh~ d~ e- g~ j~ k~ nd~ nj~ o oo r u uu
+QUESTION0_10_R  b bh ch chh d d:h dh g gh j jh k kh kh~ l: m ng~ o- p ph ph~ rx t t: t:h th v
+QUESTION0_11_R  b ch d:h k kh l: ng~ o- p ph ph~ rx t: t:h
+QUESTION0_12_R  bh chh d dh g gh j jh kh~ m t th v
+QUESTION0_13_R  bh chh d dh g gh j jh kh~ t th
+QUESTION0_14_R  bh d dh g t th
+QUESTION0_15_R  chh gh j jh kh~
+QUESTION0_16_R  chh j jh kh~
+QUESTION0_17_R  j jh kh~
+QUESTION0_18_R  j kh~
+QUESTION0_19_R  m v
+QUESTION0  a b bh ch chh d d: d:h dh dh~ d~ e- g gh g~ j jh j~ k kh k~ l l: m n n: nd~ ng~ o p ph ph~ r rx s sh shh t t: t:h th u v
+QUESTION1  bh ph s sh shh t th
+QUESTION2  a b ch chh d d: d:h dh dh~ d~ e- g gh g~ j jh j~ k kh k~ l l: m n n: nd~ ng~ o p ph~ r rx t: t:h u v
+QUESTION3  b ch chh d d:h dh g gh j jh k kh p ph~ rx t: t:h
+QUESTION4  a d: dh~ d~ e- g~ j~ k~ l l: m n n: nd~ ng~ o r u v
+QUESTION5  l m n n: u v
+QUESTION6  a d: dh~ d~ e- g~ j~ k~ l: nd~ ng~ o r
+QUESTION7  a d: e- l: ng~ o
+QUESTION8  dh~ d~ g~ j~ k~ nd~ r
+QUESTION9  dh~ d~ nd~
+QUESTION10  g~ j~ k~ r
+QUESTION11  g~ j~ k~
+QUESTION12  g~ k~
+QUESTION13  aa ai au e ei h h: i ii kh~ nj~ o- oo uu y
+QUESTION14  ai e ei h h: i ii kh~ nj~ y
+QUESTION15  i ii nj~
+QUESTION16  ai e ei h h: kh~ y
+QUESTION17  e ei
+QUESTION18  ai h h: kh~ y
+QUESTION19  ai h h: kh~
+QUESTION20  aa au o- oo uu
+QUESTION2_0_L  a ai e- g g~ h h: kh~ n: ng~ nj~ y
+QUESTION2_1_L  aa au b bh ch chh d d: d:h dh dh~ d~ e ei gh i ii j jh j~ k kh k~ l l: m n nd~ o o- oo p ph ph~ r rx s sh shh t t: t:h th u uu v
+QUESTION2_2_L  aa au dh~ d~ e ei i ii l l: m n nd~ o o- oo r rx u uu v
+QUESTION2_3_L  e ei i ii
+QUESTION2_4_L  e ei i
+QUESTION2_5_L  e ei
+QUESTION2_6_L  aa au dh~ d~ l l: m n nd~ o o- oo r rx u uu v
+QUESTION2_7_L  aa au o-
+QUESTION2_8_L  dh~ d~ l l: m n nd~ o oo r rx u uu v
+QUESTION2_9_L  o oo u uu
+QUESTION2_10_L  o oo
+QUESTION2_11_L  u uu
+QUESTION2_12_L  dh~ d~ l l: m n nd~ r rx v
+QUESTION2_13_L  b bh ch chh d d: d:h dh gh j jh j~ k kh k~ p ph ph~ s sh shh t t: t:h th
+QUESTION2_14_L  b ch d:h j k p ph~ t:
+QUESTION2_15_L  bh chh d d: dh gh jh j~ kh k~ ph s sh shh t t:h th
+QUESTION2_16_L  chh jh ph s sh shh
+QUESTION2_17_L  bh d d: dh gh j~ kh k~ t t:h th
+QUESTION2_18_L  bh d d: dh t
+QUESTION2_19_L  gh j~ kh k~ t:h th

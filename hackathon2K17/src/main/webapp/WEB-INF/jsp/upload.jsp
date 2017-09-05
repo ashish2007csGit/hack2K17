@@ -37,6 +37,15 @@
 			<div class="mdl-layout--large-screen-only mdl-layout__header-row">
 			</div>
 		</header>
+		
+		<div class="mdl-layout__drawer">
+				<span class="mdl-layout-title">Menu</span>
+				<nav class="mdl-navigation">
+					<a class="mdl-navigation__link" href="/upload">Upload</a> 
+					<a class="mdl-navigation__link" href="/home">Video library</a>
+				</nav>
+			</div>
+			
 		<main class="mdl-layout__content">
 
 		<div class="mdl-grid">

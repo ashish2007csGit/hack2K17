@@ -1,0 +1,870 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+<head>
+<META HTTP-EQUIV=REFRESH CONTENT=60>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+<title>hindi</title>
+</head>
+<body BGCOLOR = "#F0F0F5">
+<pre>
+<CENTER><h1>/home/demo/sarai-ASR/hindi/hindi</h1></CENTER>
+<CENTER> <h3>speech36</h3></CENTER>
+<hr>
+O.S. is case sensitive ("A" != "a").
+Phones will be treated as case sensitive.
+<hr>
+<b>MODULE: 00 verify training files	(2008-06-30 11:10)</b>
+    Phase 1: DICT - Checking to see if the dict and filler dict agrees with the phonelist file
+        Found 6960 words using 58 phones
+		<font color="00D000"> passed </font>
+    Phase 2: DICT - Checking to make sure there are not duplicate entries in the dictionary
+		<font color="00D000"> passed </font>
+    Phase 3: CTL - Check general format; utterance length (must be positive); files exist
+		<font color="00D000"> passed </font>
+    Phase 4: CTL - Checking number of lines in the transcript should match lines in control file
+		<font color="00D000"> passed </font>
+    Phase 5: CTL - Determine amount of training data, see if n_tied_states seems reasonable.
+		Total Hours Training: 3.32775598290595
+		This is a small amount of data, no comment at this time
+		<font color="555500"> WARNING </font>
+    Phase 6: TRANSCRIPT - Checking that all the words in the transcript are in the dictionary
+        Words in dictionary: 6956
+        Words in filler dictionary: 2
+		<font color="00D000"> passed </font>
+    Phase 7: TRANSCRIPT - Checking that all the phones in the transcript are in the phonelist, and all phones in the phonelist appear at least once
+		<font color="00D000"> passed </font>
+<hr>
+<b>MODULE: 02 Training Context Independent models for forced alignment	(2008-06-30 11:10)</b>
+    Skipped:  $ST::CFG_FORCEDALIGN set to 'no' in sphinx_train.cfg
+<hr>
+<b>MODULE: 03 Force-aligning transcripts	(2008-06-30 11:10)</b>
+    Skipped:  $ST::CFG_FORCEDALIGN set to 'no' in sphinx_train.cfg
+<hr>
+<b>MODULE: 10 Vector Quantization	(2008-06-30 11:10)</b>
+    Skipped for continuous models
+
+<hr>
+<b>MODULE: 20 Training Context Independent models	(2008-06-30 11:11)</b>
+    Cleaning up directories: accumulator...logs...qmanager...models...
+    Flat initialize
+		mk_mdef_gen <a href="file:///home/demo/sarai-ASR/hindi/logdir/20.ci_hmm/hindi.make_ci_mdef_fromphonelist.log">Log File</a> 		<font color="00D000"> completed </font>
+		<font color="00D000"> completed </font>
+		mk_flat <a href="file:///home/demo/sarai-ASR/hindi/logdir/20.ci_hmm/hindi.makeflat_cihmm.log">Log File</a> 		<font color="00D000"> completed </font>
+		accum_mean <a href="file:///home/demo/sarai-ASR/hindi/logdir/20.ci_hmm/hindi.initmean_cihmm.log">Log File</a> 		<font color="00D000"> completed </font>
+		norm_mean <a href="file:///home/demo/sarai-ASR/hindi/logdir/20.ci_hmm/hindi.normmean_cihmm.log">Log File</a> 		<font color="00D000"> completed </font>
+		accum_var <a href="file:///home/demo/sarai-ASR/hindi/logdir/20.ci_hmm/hindi.initvar_cihmm.log">Log File</a> 		<font color="00D000"> completed </font>
+		norm_var <a href="file:///home/demo/sarai-ASR/hindi/logdir/20.ci_hmm/hindi.normvar_cihmm.log">Log File</a> 		<font color="00D000"> completed </font>
+		cp_mean <a href="file:///home/demo/sarai-ASR/hindi/logdir/20.ci_hmm/hindi.cpmean_cihmm.log">Log File</a> 		<font color="00D000"> completed </font>
+		cp_var <a href="file:///home/demo/sarai-ASR/hindi/logdir/20.ci_hmm/hindi.cpvar_cihmm.log">Log File</a> 		<font color="00D000"> completed </font>
+	<img src="file:///home/demo/sarai-ASR/hindi/.20.bw.1.1.1.state.gif">     Baum welch starting for 1 Gaussian(s), iteration: 1 (1 of 1) <a href="file:///home/demo/sarai-ASR/hindi/logdir/20.ci_hmm/hindi.1.1-1.bw.log">Log File</a>
+0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100% <p>
+		This step had 0 ERROR messages and 2 WARNING messages.
+		Please check the log file for details.</p>		<font color="00D000"> completed </font>
+	<img src="file:///home/demo/sarai-ASR/hindi/.20.norm.1.1.state.gif">     Normalization for iteration: 1 <a href="file:///home/demo/sarai-ASR/hindi/logdir/20.ci_hmm/hindi.1.1.norm.log">Log File</a> 		<font color="00D000"> completed </font>
+	<img src="file:///home/demo/sarai-ASR/hindi/.20.bw.1.2.1.state.gif">     Baum welch starting for 1 Gaussian(s), iteration: 2 (1 of 1) <a href="file:///home/demo/sarai-ASR/hindi/logdir/20.ci_hmm/hindi.1.2-1.bw.log">Log File</a>
+0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100% <p>
+		This step had 50 ERROR messages and 2 WARNING messages.
+		Please check the log file for details.</p>		<font color="00D000"> completed </font>
+	<img src="file:///home/demo/sarai-ASR/hindi/.20.norm.1.2.state.gif">     Normalization for iteration: 2 <a href="file:///home/demo/sarai-ASR/hindi/logdir/20.ci_hmm/hindi.1.2.norm.log">Log File</a> 		<font color="00D000"> completed </font>
+	<img src="file:///home/demo/sarai-ASR/hindi/.20.bw.1.3.1.state.gif">     Baum welch starting for 1 Gaussian(s), iteration: 3 (1 of 1) <a href="file:///home/demo/sarai-ASR/hindi/logdir/20.ci_hmm/hindi.1.3-1.bw.log">Log File</a>
+0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100% <p>
+		This step had 64 ERROR messages and 2 WARNING messages.
+		Please check the log file for details.</p>		<font color="00D000"> completed </font>
+	<img src="file:///home/demo/sarai-ASR/hindi/.20.norm.1.3.state.gif">     Normalization for iteration: 3 <a href="file:///home/demo/sarai-ASR/hindi/logdir/20.ci_hmm/hindi.1.3.norm.log">Log File</a> 		<font color="00D000"> completed </font>
+	<img src="file:///home/demo/sarai-ASR/hindi/.20.bw.1.4.1.state.gif">     Baum welch starting for 1 Gaussian(s), iteration: 4 (1 of 1) <a href="file:///home/demo/sarai-ASR/hindi/logdir/20.ci_hmm/hindi.1.4-1.bw.log">Log File</a>
+0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100% <p>
+		This step had 88 ERROR messages and 3 WARNING messages.
+		Please check the log file for details.</p>		<font color="00D000"> completed </font>
+	<img src="file:///home/demo/sarai-ASR/hindi/.20.norm.1.4.state.gif">     Normalization for iteration: 4 <a href="file:///home/demo/sarai-ASR/hindi/logdir/20.ci_hmm/hindi.1.4.norm.log">Log File</a> 		<font color="00D000"> completed </font>
+	<img src="file:///home/demo/sarai-ASR/hindi/.20.bw.1.5.1.state.gif">     Baum welch starting for 1 Gaussian(s), iteration: 5 (1 of 1) <a href="file:///home/demo/sarai-ASR/hindi/logdir/20.ci_hmm/hindi.1.5-1.bw.log">Log File</a>
+0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100% <p>
+		This step had 82 ERROR messages and 3 WARNING messages.
+		Please check the log file for details.</p>		<font color="00D000"> completed </font>
+	<img src="file:///home/demo/sarai-ASR/hindi/.20.norm.1.5.state.gif">     Normalization for iteration: 5 <a href="file:///home/demo/sarai-ASR/hindi/logdir/20.ci_hmm/hindi.1.5.norm.log">Log File</a> 		<font color="00D000"> completed </font>
+	<img src="file:///home/demo/sarai-ASR/hindi/.20.bw.1.6.1.state.gif">     Baum welch starting for 1 Gaussian(s), iteration: 6 (1 of 1) <a href="file:///home/demo/sarai-ASR/hindi/logdir/20.ci_hmm/hindi.1.6-1.bw.log">Log File</a>
+0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100% <p>
+		This step had 88 ERROR messages and 3 WARNING messages.
+		Please check the log file for details.</p>		<font color="00D000"> completed </font>
+	<img src="file:///home/demo/sarai-ASR/hindi/.20.norm.1.6.state.gif">     Normalization for iteration: 6 <a href="file:///home/demo/sarai-ASR/hindi/logdir/20.ci_hmm/hindi.1.6.norm.log">Log File</a> 		<font color="00D000"> completed </font>
+	<img src="file:///home/demo/sarai-ASR/hindi/.20.bw.1.7.1.state.gif">     Baum welch starting for 1 Gaussian(s), iteration: 7 (1 of 1) <a href="file:///home/demo/sarai-ASR/hindi/logdir/20.ci_hmm/hindi.1.7-1.bw.log">Log File</a>
+0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100% <p>
+		This step had 92 ERROR messages and 3 WARNING messages.
+		Please check the log file for details.</p>		<font color="00D000"> completed </font>
+	<img src="file:///home/demo/sarai-ASR/hindi/.20.norm.1.7.state.gif">     Normalization for iteration: 7 <a href="file:///home/demo/sarai-ASR/hindi/logdir/20.ci_hmm/hindi.1.7.norm.log">Log File</a> 		<font color="00D000"> completed </font>
+Training completed after 7 iterations
+<hr>
+<b>MODULE: 30 Training Context Dependent models	(2008-06-30 11:23)</b>
+    Cleaning up directories: accumulator...logs...qmanager...
+    Initialization Make Untied Mdef
+		mk_untied_mdef <a href="file:///home/demo/sarai-ASR/hindi/logdir/30.cd_hmm_untied/hindi.make_alltriphonelist.log">Log File</a> <p>
+		This step had 0 ERROR messages and 1 WARNING messages.
+		Please check the log file for details.</p>		<font color="00D000"> completed </font>
+    Initialization Copy CI to CD
+<a href="file:///home/demo/sarai-ASR/hindi/logdir/30.cd_hmm_untied/hindi.copycitocd.log">Log File</a> 		<font color="00D000"> completed </font>
+	<img src="file:///home/demo/sarai-ASR/hindi/.30.bw.1.1.state.gif">     Baum welch starting for iteration: 1 (1 of 1) <a href="file:///home/demo/sarai-ASR/hindi/logdir/30.cd_hmm_untied/hindi.1-1.bw.log">Log File</a>
+0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100% <p>
+		This step had 92 ERROR messages and 4 WARNING messages.
+		Please check the log file for details.</p>		<font color="00D000"> completed </font>
+	<img src="file:///home/demo/sarai-ASR/hindi/.30.norm.1.state.gif">     Normalization for iteration: 1 <a href="file:///home/demo/sarai-ASR/hindi/logdir/30.cd_hmm_untied/hindi.1.norm.log">Log File</a> <p>
+		This step had 0 ERROR messages and 666 WARNING messages.
+		Please check the log file for details.</p>		<font color="00D000"> completed </font>
+	<img src="file:///home/demo/sarai-ASR/hindi/.30.bw.2.1.state.gif">     Baum welch starting for iteration: 2 (1 of 1) <a href="file:///home/demo/sarai-ASR/hindi/logdir/30.cd_hmm_untied/hindi.2-1.bw.log">Log File</a>
+0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100% <p>
+		This step had 94 ERROR messages and 3 WARNING messages.
+		Please check the log file for details.</p>		<font color="00D000"> completed </font>
+	<img src="file:///home/demo/sarai-ASR/hindi/.30.norm.2.state.gif">     Normalization for iteration: 2 <a href="file:///home/demo/sarai-ASR/hindi/logdir/30.cd_hmm_untied/hindi.2.norm.log">Log File</a> <p>
+		This step had 0 ERROR messages and 675 WARNING messages.
+		Please check the log file for details.</p>		<font color="00D000"> completed </font>
+	<img src="file:///home/demo/sarai-ASR/hindi/.30.bw.3.1.state.gif">     Baum welch starting for iteration: 3 (1 of 1) <a href="file:///home/demo/sarai-ASR/hindi/logdir/30.cd_hmm_untied/hindi.3-1.bw.log">Log File</a>
+0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100% <p>
+		This step had 96 ERROR messages and 3 WARNING messages.
+		Please check the log file for details.</p>		<font color="00D000"> completed </font>
+	<img src="file:///home/demo/sarai-ASR/hindi/.30.norm.3.state.gif">     Normalization for iteration: 3 <a href="file:///home/demo/sarai-ASR/hindi/logdir/30.cd_hmm_untied/hindi.3.norm.log">Log File</a> <p>
+		This step had 0 ERROR messages and 684 WARNING messages.
+		Please check the log file for details.</p>		<font color="00D000"> completed </font>
+	<img src="file:///home/demo/sarai-ASR/hindi/.30.bw.4.1.state.gif">     Baum welch starting for iteration: 4 (1 of 1) <a href="file:///home/demo/sarai-ASR/hindi/logdir/30.cd_hmm_untied/hindi.4-1.bw.log">Log File</a>
+0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100% <p>
+		This step had 96 ERROR messages and 3 WARNING messages.
+		Please check the log file for details.</p>		<font color="00D000"> completed </font>
+	<img src="file:///home/demo/sarai-ASR/hindi/.30.norm.4.state.gif">     Normalization for iteration: 4 <a href="file:///home/demo/sarai-ASR/hindi/logdir/30.cd_hmm_untied/hindi.4.norm.log">Log File</a> <p>
+		This step had 0 ERROR messages and 684 WARNING messages.
+		Please check the log file for details.</p>		<font color="00D000"> completed </font>
+Training completed after 4 iterations
+<hr>
+<b>MODULE: 40 Build Trees	(2008-06-30 11:37)</b>
+    Cleaning up old log files...
+    Make Questions
+	<a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.make_questions.log">Log File</a> 		<font color="00D000"> completed </font>
+    Tree building
+	Processing each phone with each state
+		a 0 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.a.0.log">Log File</a> 		<font color="00D000"> completed </font>
+		a 1 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.a.1.log">Log File</a> 		<font color="00D000"> completed </font>
+		a 2 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.a.2.log">Log File</a> 		<font color="00D000"> completed </font>
+		aa 0 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.aa.0.log">Log File</a> 		<font color="00D000"> completed </font>
+		aa 1 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.aa.1.log">Log File</a> 		<font color="00D000"> completed </font>
+		aa 2 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.aa.2.log">Log File</a> 		<font color="00D000"> completed </font>
+		r 0 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.r.0.log">Log File</a> 		<font color="00D000"> completed </font>
+		r 1 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.r.1.log">Log File</a> 		<font color="00D000"> completed </font>
+		r 2 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.r.2.log">Log File</a> 		<font color="00D000"> completed </font>
+		i 0 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.i.0.log">Log File</a> 		<font color="00D000"> completed </font>
+		i 1 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.i.1.log">Log File</a> 		<font color="00D000"> completed </font>
+		i 2 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.i.2.log">Log File</a> 		<font color="00D000"> completed </font>
+		k 0 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.k.0.log">Log File</a> 		<font color="00D000"> completed </font>
+		k 1 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.k.1.log">Log File</a> 		<font color="00D000"> completed </font>
+		k 2 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.k.2.log">Log File</a> 		<font color="00D000"> completed </font>
+		k~ 0 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.k~.0.log">Log File</a> 		<font color="00D000"> completed </font>
+		k~ 1 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.k~.1.log">Log File</a> 		<font color="00D000"> completed </font>
+		k~ 2 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.k~.2.log">Log File</a> 		<font color="00D000"> completed </font>
+		n 0 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.n.0.log">Log File</a> 		<font color="00D000"> completed </font>
+		n 1 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.n.1.log">Log File</a> 		<font color="00D000"> completed </font>
+		n 2 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.n.2.log">Log File</a> 		<font color="00D000"> completed </font>
+		ei 0 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.ei.0.log">Log File</a> 		<font color="00D000"> completed </font>
+		ei 1 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.ei.1.log">Log File</a> 		<font color="00D000"> completed </font>
+		ei 2 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.ei.2.log">Log File</a> 		<font color="00D000"> completed </font>
+		s 0 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.s.0.log">Log File</a> 		<font color="00D000"> completed </font>
+		s 1 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.s.1.log">Log File</a> 		<font color="00D000"> completed </font>
+		s 2 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.s.2.log">Log File</a> 		<font color="00D000"> completed </font>
+		t 0 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.t.0.log">Log File</a> 		<font color="00D000"> completed </font>
+		t 1 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.t.1.log">Log File</a> 		<font color="00D000"> completed </font>
+		t 2 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.t.2.log">Log File</a> 		<font color="00D000"> completed </font>
+		oo 0 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.oo.0.log">Log File</a> 		<font color="00D000"> completed </font>
+		oo 1 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.oo.1.log">Log File</a> 		<font color="00D000"> completed </font>
+		oo 2 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.oo.2.log">Log File</a> 		<font color="00D000"> completed </font>
+		l 0 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.l.0.log">Log File</a> 		<font color="00D000"> completed </font>
+		l 1 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.l.1.log">Log File</a> 		<font color="00D000"> completed </font>
+		l 2 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.l.2.log">Log File</a> 		<font color="00D000"> completed </font>
+		p 0 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.p.0.log">Log File</a> 		<font color="00D000"> completed </font>
+		p 1 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.p.1.log">Log File</a> 		<font color="00D000"> completed </font>
+		p 2 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.p.2.log">Log File</a> 		<font color="00D000"> completed </font>
+		ii 0 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.ii.0.log">Log File</a> 		<font color="00D000"> completed </font>
+		ii 1 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.ii.1.log">Log File</a> 		<font color="00D000"> completed </font>
+		ii 2 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.ii.2.log">Log File</a> 		<font color="00D000"> completed </font>
+		n: 0 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.n:.0.log">Log File</a> 		<font color="00D000"> completed </font>
+		n: 1 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.n:.1.log">Log File</a> 		<font color="00D000"> completed </font>
+		n: 2 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.n:.2.log">Log File</a> 		<font color="00D000"> completed </font>
+		y 0 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.y.0.log">Log File</a> 		<font color="00D000"> completed </font>
+		y 1 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.y.1.log">Log File</a> 		<font color="00D000"> completed </font>
+		y 2 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.y.2.log">Log File</a> 		<font color="00D000"> completed </font>
+		m 0 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.m.0.log">Log File</a> 		<font color="00D000"> completed </font>
+		m 1 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.m.1.log">Log File</a> 		<font color="00D000"> completed </font>
+		m 2 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.m.2.log">Log File</a> 		<font color="00D000"> completed </font>
+		v 0 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.v.0.log">Log File</a> 		<font color="00D000"> completed </font>
+		v 1 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.v.1.log">Log File</a> 		<font color="00D000"> completed </font>
+		v 2 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.v.2.log">Log File</a> 		<font color="00D000"> completed </font>
+		u 0 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.u.0.log">Log File</a> 		<font color="00D000"> completed </font>
+		u 1 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.u.1.log">Log File</a> 		<font color="00D000"> completed </font>
+		u 2 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.u.2.log">Log File</a> 		<font color="00D000"> completed </font>
+		d 0 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.d.0.log">Log File</a> 		<font color="00D000"> completed </font>
+		d 1 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.d.1.log">Log File</a> 		<font color="00D000"> completed </font>
+		d 2 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.d.2.log">Log File</a> 		<font color="00D000"> completed </font>
+		g 0 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.g.0.log">Log File</a> 		<font color="00D000"> completed </font>
+		g 1 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.g.1.log">Log File</a> 		<font color="00D000"> completed </font>
+		g 2 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.g.2.log">Log File</a> 		<font color="00D000"> completed </font>
+		g~ 0 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.g~.0.log">Log File</a> 		<font color="00D000"> completed </font>
+		g~ 1 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.g~.1.log">Log File</a> 		<font color="00D000"> completed </font>
+		g~ 2 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.g~.2.log">Log File</a> 		<font color="00D000"> completed </font>
+		b 0 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.b.0.log">Log File</a> 		<font color="00D000"> completed </font>
+		b 1 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.b.1.log">Log File</a> 		<font color="00D000"> completed </font>
+		b 2 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.b.2.log">Log File</a> 		<font color="00D000"> completed </font>
+		h 0 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.h.0.log">Log File</a> 		<font color="00D000"> completed </font>
+		h 1 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.h.1.log">Log File</a> 		<font color="00D000"> completed </font>
+		h 2 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.h.2.log">Log File</a> 		<font color="00D000"> completed </font>
+		j 0 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.j.0.log">Log File</a> 		<font color="00D000"> completed </font>
+		j 1 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.j.1.log">Log File</a> 		<font color="00D000"> completed </font>
+		j 2 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.j.2.log">Log File</a> 		<font color="00D000"> completed </font>
+		t: 0 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.t:.0.log">Log File</a> 		<font color="00D000"> completed </font>
+		t: 1 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.t:.1.log">Log File</a> 		<font color="00D000"> completed </font>
+		t: 2 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.t:.2.log">Log File</a> 		<font color="00D000"> completed </font>
+		ch 0 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.ch.0.log">Log File</a> 		<font color="00D000"> completed </font>
+		ch 1 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.ch.1.log">Log File</a> 		<font color="00D000"> completed </font>
+		ch 2 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.ch.2.log">Log File</a> 		<font color="00D000"> completed </font>
+		sh 0 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.sh.0.log">Log File</a> 		<font color="00D000"> completed </font>
+		sh 1 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.sh.1.log">Log File</a> 		<font color="00D000"> completed </font>
+		sh 2 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.sh.2.log">Log File</a> 		<font color="00D000"> completed </font>
+		d: 0 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.d:.0.log">Log File</a> 		<font color="00D000"> completed </font>
+		d: 1 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.d:.1.log">Log File</a> 		<font color="00D000"> completed </font>
+		d: 2 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.d:.2.log">Log File</a> 		<font color="00D000"> completed </font>
+		uu 0 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.uu.0.log">Log File</a> 		<font color="00D000"> completed </font>
+		uu 1 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.uu.1.log">Log File</a> 		<font color="00D000"> completed </font>
+		uu 2 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.uu.2.log">Log File</a> 		<font color="00D000"> completed </font>
+		dh 0 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.dh.0.log">Log File</a> 		<font color="00D000"> completed </font>
+		dh 1 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.dh.1.log">Log File</a> 		<font color="00D000"> completed </font>
+		dh 2 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.dh.2.log">Log File</a> 		<font color="00D000"> completed </font>
+		shh 0 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.shh.0.log">Log File</a> 		<font color="00D000"> completed </font>
+		shh 1 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.shh.1.log">Log File</a> 		<font color="00D000"> completed </font>
+		shh 2 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.shh.2.log">Log File</a> 		<font color="00D000"> completed </font>
+		nd~ 0 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.nd~.0.log">Log File</a> 		<font color="00D000"> completed </font>
+		nd~ 1 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.nd~.1.log">Log File</a> 		<font color="00D000"> completed </font>
+		nd~ 2 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.nd~.2.log">Log File</a> 		<font color="00D000"> completed </font>
+		bh 0 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.bh.0.log">Log File</a> 		<font color="00D000"> completed </font>
+		bh 1 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.bh.1.log">Log File</a> 		<font color="00D000"> completed </font>
+		bh 2 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.bh.2.log">Log File</a> 		<font color="00D000"> completed </font>
+		ai 0 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.ai.0.log">Log File</a> 		<font color="00D000"> completed </font>
+		ai 1 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.ai.1.log">Log File</a> 		<font color="00D000"> completed </font>
+		ai 2 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.ai.2.log">Log File</a> 		<font color="00D000"> completed </font>
+		au 0 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.au.0.log">Log File</a> 		<font color="00D000"> completed </font>
+		au 1 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.au.1.log">Log File</a> 		<font color="00D000"> completed </font>
+		au 2 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.au.2.log">Log File</a> 		<font color="00D000"> completed </font>
+		th 0 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.th.0.log">Log File</a> 		<font color="00D000"> completed </font>
+		th 1 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.th.1.log">Log File</a> 		<font color="00D000"> completed </font>
+		th 2 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.th.2.log">Log File</a> 		<font color="00D000"> completed </font>
+		ph 0 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.ph.0.log">Log File</a> 		<font color="00D000"> completed </font>
+		ph 1 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.ph.1.log">Log File</a> 		<font color="00D000"> completed </font>
+		ph 2 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.ph.2.log">Log File</a> 		<font color="00D000"> completed </font>
+		ph~ 0 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.ph~.0.log">Log File</a> 		<font color="00D000"> completed </font>
+		ph~ 1 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.ph~.1.log">Log File</a> 		<font color="00D000"> completed </font>
+		ph~ 2 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.ph~.2.log">Log File</a> 		<font color="00D000"> completed </font>
+		kh 0 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.kh.0.log">Log File</a> 		<font color="00D000"> completed </font>
+		kh 1 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.kh.1.log">Log File</a> 		<font color="00D000"> completed </font>
+		kh 2 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.kh.2.log">Log File</a> 		<font color="00D000"> completed </font>
+		kh~ 0 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.kh~.0.log">Log File</a> 		<font color="00D000"> completed </font>
+		kh~ 1 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.kh~.1.log">Log File</a> 		<font color="00D000"> completed </font>
+		kh~ 2 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.kh~.2.log">Log File</a> 		<font color="00D000"> completed </font>
+		d~ 0 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.d~.0.log">Log File</a> 		<font color="00D000"> completed </font>
+		d~ 1 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.d~.1.log">Log File</a> 		<font color="00D000"> completed </font>
+		d~ 2 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.d~.2.log">Log File</a> 		<font color="00D000"> completed </font>
+		rx 0 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.rx.0.log">Log File</a> 		<font color="00D000"> completed </font>
+		rx 1 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.rx.1.log">Log File</a> 		<font color="00D000"> completed </font>
+		rx 2 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.rx.2.log">Log File</a> 		<font color="00D000"> completed </font>
+		chh 0 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.chh.0.log">Log File</a> 		<font color="00D000"> completed </font>
+		chh 1 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.chh.1.log">Log File</a> 		<font color="00D000"> completed </font>
+		chh 2 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.chh.2.log">Log File</a> 		<font color="00D000"> completed </font>
+		t:h 0 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.t:h.0.log">Log File</a> 		<font color="00D000"> completed </font>
+		t:h 1 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.t:h.1.log">Log File</a> 		<font color="00D000"> completed </font>
+		t:h 2 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.t:h.2.log">Log File</a> 		<font color="00D000"> completed </font>
+		gh 0 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.gh.0.log">Log File</a> 		<font color="00D000"> completed </font>
+		gh 1 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.gh.1.log">Log File</a> 		<font color="00D000"> completed </font>
+		gh 2 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.gh.2.log">Log File</a> 		<font color="00D000"> completed </font>
+		d:h 0 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.d:h.0.log">Log File</a> 		<font color="00D000"> completed </font>
+		d:h 1 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.d:h.1.log">Log File</a> 		<font color="00D000"> completed </font>
+		d:h 2 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.d:h.2.log">Log File</a> 		<font color="00D000"> completed </font>
+		jh 0 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.jh.0.log">Log File</a> 		<font color="00D000"> completed </font>
+		jh 1 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.jh.1.log">Log File</a> 		<font color="00D000"> completed </font>
+		jh 2 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.jh.2.log">Log File</a> 		<font color="00D000"> completed </font>
+		dh~ 0 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.dh~.0.log">Log File</a> 		<font color="00D000"> completed </font>
+		dh~ 1 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.dh~.1.log">Log File</a> 		<font color="00D000"> completed </font>
+		dh~ 2 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.dh~.2.log">Log File</a> 		<font color="00D000"> completed </font>
+		o 0 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.o.0.log">Log File</a> 		<font color="00D000"> completed </font>
+		o 1 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.o.1.log">Log File</a> 		<font color="00D000"> completed </font>
+		o 2 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.o.2.log">Log File</a> 		<font color="00D000"> completed </font>
+		o- 0 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.o-.0.log">Log File</a> 		<font color="00D000"> completed </font>
+		o- 1 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.o-.1.log">Log File</a> 		<font color="00D000"> completed </font>
+		o- 2 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.o-.2.log">Log File</a> 		<font color="00D000"> completed </font>
+		nj~ 0 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.nj~.0.log">Log File</a> 		<font color="00D000"> completed </font>
+		nj~ 1 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.nj~.1.log">Log File</a> 		<font color="00D000"> completed </font>
+		nj~ 2 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.nj~.2.log">Log File</a> 		<font color="00D000"> completed </font>
+		ng~ 0 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.ng~.0.log">Log File</a> 		<font color="00D000"> completed </font>
+		ng~ 1 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.ng~.1.log">Log File</a> 		<font color="00D000"> completed </font>
+		ng~ 2 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.ng~.2.log">Log File</a> 		<font color="00D000"> completed </font>
+		l: 0 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.l:.0.log">Log File</a> 		<font color="00D000"> completed </font>
+		l: 1 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.l:.1.log">Log File</a> 		<font color="00D000"> completed </font>
+		l: 2 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.l:.2.log">Log File</a> 		<font color="00D000"> completed </font>
+		h: 0 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.h:.0.log">Log File</a> 		<font color="00D000"> completed </font>
+		h: 1 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.h:.1.log">Log File</a> 		<font color="00D000"> completed </font>
+		h: 2 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.h:.2.log">Log File</a> 		<font color="00D000"> completed </font>
+		e- 0 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.e-.0.log">Log File</a> 		<font color="00D000"> completed </font>
+		e- 1 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.e-.1.log">Log File</a> 		<font color="00D000"> completed </font>
+		e- 2 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.e-.2.log">Log File</a> 		<font color="00D000"> completed </font>
+		e 0 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.e.0.log">Log File</a> 		<font color="00D000"> completed </font>
+		e 1 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.e.1.log">Log File</a> 		<font color="00D000"> completed </font>
+		e 2 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.e.2.log">Log File</a> 		<font color="00D000"> completed </font>
+		j~ 0 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.j~.0.log">Log File</a> 		<font color="00D000"> completed </font>
+		j~ 1 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.j~.1.log">Log File</a> 		<font color="00D000"> completed </font>
+		j~ 2 <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.buildtree.j~.2.log">Log File</a> 		<font color="00D000"> completed </font>
+        Skipping SIL
+		mk_mdef_gen <a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.build.alltriphones.mdef.log">Log File</a> 		<font color="00D000"> completed </font>
+    Prune trees
+		<a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.prunetree.1000.log">Log File</a> 		<font color="00D000"> completed </font>
+    Tie states
+		<a href="file:///home/demo/sarai-ASR/hindi/logdir/40.buildtrees/hindi.tiestate.1000.log">Log File</a> 		<font color="00D000"> completed </font>
+<hr>
+<b>MODULE: 50 Training Context dependent models	(2008-06-30 11:52)</b>
+    Cleaning up directories: accumulator...logs...
+qmanager...    Copy CI to CD initialize
+<a href="file:///home/demo/sarai-ASR/hindi/logdir/50.cd_hmm_tied/hindi.copy.ci.2.cd.log">Log File</a> 		<font color="00D000"> completed </font>
+	<img src="file:///home/demo/sarai-ASR/hindi/.50.bw.1.1.1.state.gif">     Baum welch starting for 1 Gaussian(s), iteration: 1 (1 of 1) <a href="file:///home/demo/sarai-ASR/hindi/logdir/50.cd_hmm_tied/hindi.1.1-1.bw.log">Log File</a>
+0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100% <p>
+		This step had 92 ERROR messages and 3 WARNING messages.
+		Please check the log file for details.</p>		<font color="00D000"> completed </font>
+	<img src="file:///home/demo/sarai-ASR/hindi/.50.norm.1.1.state.gif">     Normalization for iteration: 1 <a href="file:///home/demo/sarai-ASR/hindi/logdir/50.cd_hmm_tied/hindi.1.1.norm.log">Log File</a> 		<font color="00D000"> completed </font>
+	<img src="file:///home/demo/sarai-ASR/hindi/.50.bw.1.2.1.state.gif">     Baum welch starting for 1 Gaussian(s), iteration: 2 (1 of 1) <a href="file:///home/demo/sarai-ASR/hindi/logdir/50.cd_hmm_tied/hindi.1.2-1.bw.log">Log File</a>
+0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100% <p>
+		This step had 92 ERROR messages and 3 WARNING messages.
+		Please check the log file for details.</p>		<font color="00D000"> completed </font>
+	<img src="file:///home/demo/sarai-ASR/hindi/.50.norm.1.2.state.gif">     Normalization for iteration: 2 <a href="file:///home/demo/sarai-ASR/hindi/logdir/50.cd_hmm_tied/hindi.1.2.norm.log">Log File</a> 		<font color="00D000"> completed </font>
+	<img src="file:///home/demo/sarai-ASR/hindi/.50.bw.1.3.1.state.gif">     Baum welch starting for 1 Gaussian(s), iteration: 3 (1 of 1) <a href="file:///home/demo/sarai-ASR/hindi/logdir/50.cd_hmm_tied/hindi.1.3-1.bw.log">Log File</a>
+0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100% <p>
+		This step had 94 ERROR messages and 3 WARNING messages.
+		Please check the log file for details.</p>		<font color="00D000"> completed </font>
+	<img src="file:///home/demo/sarai-ASR/hindi/.50.norm.1.3.state.gif">     Normalization for iteration: 3 <a href="file:///home/demo/sarai-ASR/hindi/logdir/50.cd_hmm_tied/hindi.1.3.norm.log">Log File</a> 		<font color="00D000"> completed </font>
+	<img src="file:///home/demo/sarai-ASR/hindi/.50.bw.1.4.1.state.gif">     Baum welch starting for 1 Gaussian(s), iteration: 4 (1 of 1) <a href="file:///home/demo/sarai-ASR/hindi/logdir/50.cd_hmm_tied/hindi.1.4-1.bw.log">Log File</a>
+0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100% <p>
+		This step had 96 ERROR messages and 3 WARNING messages.
+		Please check the log file for details.</p>		<font color="00D000"> completed </font>
+	<img src="file:///home/demo/sarai-ASR/hindi/.50.norm.1.4.state.gif">     Normalization for iteration: 4 <a href="file:///home/demo/sarai-ASR/hindi/logdir/50.cd_hmm_tied/hindi.1.4.norm.log">Log File</a> 		<font color="00D000"> completed </font>
+    Split Gaussians, increase by 1
+<a href="file:///home/demo/sarai-ASR/hindi/logdir/50.cd_hmm_tied/hindi.split_gaussians.1.1.log">Log File</a> 		<font color="00D000"> completed </font>
+	<img src="file:///home/demo/sarai-ASR/hindi/.50.bw.2.1.1.state.gif">     Baum welch starting for 2 Gaussian(s), iteration: 1 (1 of 1) <a href="file:///home/demo/sarai-ASR/hindi/logdir/50.cd_hmm_tied/hindi.2.1-1.bw.log">Log File</a>
+0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100% <p>
+		This step had 94 ERROR messages and 3 WARNING messages.
+		Please check the log file for details.</p>		<font color="00D000"> completed </font>
+	<img src="file:///home/demo/sarai-ASR/hindi/.50.norm.2.1.state.gif">     Normalization for iteration: 1 <a href="file:///home/demo/sarai-ASR/hindi/logdir/50.cd_hmm_tied/hindi.2.1.norm.log">Log File</a> 		<font color="00D000"> completed </font>
+	<img src="file:///home/demo/sarai-ASR/hindi/.50.bw.2.2.1.state.gif">     Baum welch starting for 2 Gaussian(s), iteration: 2 (1 of 1) <a href="file:///home/demo/sarai-ASR/hindi/logdir/50.cd_hmm_tied/hindi.2.2-1.bw.log">Log File</a>
+0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100% <p>
+		This step had 94 ERROR messages and 3 WARNING messages.
+		Please check the log file for details.</p>		<font color="00D000"> completed </font>
+	<img src="file:///home/demo/sarai-ASR/hindi/.50.norm.2.2.state.gif">     Normalization for iteration: 2 <a href="file:///home/demo/sarai-ASR/hindi/logdir/50.cd_hmm_tied/hindi.2.2.norm.log">Log File</a> 		<font color="00D000"> completed </font>
+	<img src="file:///home/demo/sarai-ASR/hindi/.50.bw.2.3.1.state.gif">     Baum welch starting for 2 Gaussian(s), iteration: 3 (1 of 1) <a href="file:///home/demo/sarai-ASR/hindi/logdir/50.cd_hmm_tied/hindi.2.3-1.bw.log">Log File</a>
+0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100% <p>
+		This step had 90 ERROR messages and 3 WARNING messages.
+		Please check the log file for details.</p>		<font color="00D000"> completed </font>
+	<img src="file:///home/demo/sarai-ASR/hindi/.50.norm.2.3.state.gif">     Normalization for iteration: 3 <a href="file:///home/demo/sarai-ASR/hindi/logdir/50.cd_hmm_tied/hindi.2.3.norm.log">Log File</a> 		<font color="00D000"> completed </font>
+	<img src="file:///home/demo/sarai-ASR/hindi/.50.bw.2.4.1.state.gif">     Baum welch starting for 2 Gaussian(s), iteration: 4 (1 of 1) <a href="file:///home/demo/sarai-ASR/hindi/logdir/50.cd_hmm_tied/hindi.2.4-1.bw.log">Log File</a>
+0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100% <p>
+		This step had 86 ERROR messages and 2 WARNING messages.
+		Please check the log file for details.</p>		<font color="00D000"> completed </font>
+	<img src="file:///home/demo/sarai-ASR/hindi/.50.norm.2.4.state.gif">     Normalization for iteration: 4 <a href="file:///home/demo/sarai-ASR/hindi/logdir/50.cd_hmm_tied/hindi.2.4.norm.log">Log File</a> 		<font color="00D000"> completed </font>
+	<img src="file:///home/demo/sarai-ASR/hindi/.50.bw.2.5.1.state.gif">     Baum welch starting for 2 Gaussian(s), iteration: 5 (1 of 1) <a href="file:///home/demo/sarai-ASR/hindi/logdir/50.cd_hmm_tied/hindi.2.5-1.bw.log">Log File</a>
+0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100% <p>
+		This step had 88 ERROR messages and 2 WARNING messages.
+		Please check the log file for details.</p>		<font color="00D000"> completed </font>
+	<img src="file:///home/demo/sarai-ASR/hindi/.50.norm.2.5.state.gif">     Normalization for iteration: 5 <a href="file:///home/demo/sarai-ASR/hindi/logdir/50.cd_hmm_tied/hindi.2.5.norm.log">Log File</a> 		<font color="00D000"> completed </font>
+    Split Gaussians, increase by 2
+<a href="file:///home/demo/sarai-ASR/hindi/logdir/50.cd_hmm_tied/hindi.split_gaussians.2.2.log">Log File</a> 		<font color="00D000"> completed </font>
+	<img src="file:///home/demo/sarai-ASR/hindi/.50.bw.4.1.1.state.gif">     Baum welch starting for 4 Gaussian(s), iteration: 1 (1 of 1) <a href="file:///home/demo/sarai-ASR/hindi/logdir/50.cd_hmm_tied/hindi.4.1-1.bw.log">Log File</a>
+0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100% <p>
+		This step had 88 ERROR messages and 2 WARNING messages.
+		Please check the log file for details.</p>		<font color="00D000"> completed </font>
+	<img src="file:///home/demo/sarai-ASR/hindi/.50.norm.4.1.state.gif">     Normalization for iteration: 1 <a href="file:///home/demo/sarai-ASR/hindi/logdir/50.cd_hmm_tied/hindi.4.1.norm.log">Log File</a> <p>
+		This step had 76 ERROR messages and 0 WARNING messages.
+		Please check the log file for details.</p>		<font color="00D000"> completed </font>
+	<img src="file:///home/demo/sarai-ASR/hindi/.50.bw.4.2.1.state.gif">     Baum welch starting for 4 Gaussian(s), iteration: 2 (1 of 1) <a href="file:///home/demo/sarai-ASR/hindi/logdir/50.cd_hmm_tied/hindi.4.2-1.bw.log">Log File</a>
+0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100% <p>
+		This step had 88 ERROR messages and 2 WARNING messages.
+		Please check the log file for details.</p>		<font color="00D000"> completed </font>
+	<img src="file:///home/demo/sarai-ASR/hindi/.50.norm.4.2.state.gif">     Normalization for iteration: 2 <a href="file:///home/demo/sarai-ASR/hindi/logdir/50.cd_hmm_tied/hindi.4.2.norm.log">Log File</a> 		<font color="00D000"> completed </font>
+	<img src="file:///home/demo/sarai-ASR/hindi/.50.bw.4.3.1.state.gif">     Baum welch starting for 4 Gaussian(s), iteration: 3 (1 of 1) <a href="file:///home/demo/sarai-ASR/hindi/logdir/50.cd_hmm_tied/hindi.4.3-1.bw.log">Log File</a>
+0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100% <p>
+		This step had 84 ERROR messages and 2 WARNING messages.
+		Please check the log file for details.</p>		<font color="00D000"> completed </font>
+	<img src="file:///home/demo/sarai-ASR/hindi/.50.norm.4.3.state.gif">     Normalization for iteration: 3 <a href="file:///home/demo/sarai-ASR/hindi/logdir/50.cd_hmm_tied/hindi.4.3.norm.log">Log File</a> 		<font color="00D000"> completed </font>
+	<img src="file:///home/demo/sarai-ASR/hindi/.50.bw.4.4.1.state.gif">     Baum welch starting for 4 Gaussian(s), iteration: 4 (1 of 1) <a href="file:///home/demo/sarai-ASR/hindi/logdir/50.cd_hmm_tied/hindi.4.4-1.bw.log">Log File</a>
+0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100% <p>
+		This step had 84 ERROR messages and 2 WARNING messages.
+		Please check the log file for details.</p>		<font color="00D000"> completed </font>
+	<img src="file:///home/demo/sarai-ASR/hindi/.50.norm.4.4.state.gif">     Normalization for iteration: 4 <a href="file:///home/demo/sarai-ASR/hindi/logdir/50.cd_hmm_tied/hindi.4.4.norm.log">Log File</a> 		<font color="00D000"> completed </font>
+	<img src="file:///home/demo/sarai-ASR/hindi/.50.bw.4.5.1.state.gif">     Baum welch starting for 4 Gaussian(s), iteration: 5 (1 of 1) <a href="file:///home/demo/sarai-ASR/hindi/logdir/50.cd_hmm_tied/hindi.4.5-1.bw.log">Log File</a>
+0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100% <p>
+		This step had 84 ERROR messages and 2 WARNING messages.
+		Please check the log file for details.</p>		<font color="00D000"> completed </font>
+	<img src="file:///home/demo/sarai-ASR/hindi/.50.norm.4.5.state.gif">     Normalization for iteration: 5 <a href="file:///home/demo/sarai-ASR/hindi/logdir/50.cd_hmm_tied/hindi.4.5.norm.log">Log File</a> 		<font color="00D000"> completed </font>
+    Split Gaussians, increase by 4
+<a href="file:///home/demo/sarai-ASR/hindi/logdir/50.cd_hmm_tied/hindi.split_gaussians.4.4.log">Log File</a> 		<font color="00D000"> completed </font>
+	<img src="file:///home/demo/sarai-ASR/hindi/.50.bw.8.1.1.state.gif">     Baum welch starting for 8 Gaussian(s), iteration: 1 (1 of 1) <a href="file:///home/demo/sarai-ASR/hindi/logdir/50.cd_hmm_tied/hindi.8.1-1.bw.log">Log File</a>
+0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100% <p>
+		This step had 84 ERROR messages and 2 WARNING messages.
+		Please check the log file for details.</p>		<font color="00D000"> completed </font>
+	<img src="file:///home/demo/sarai-ASR/hindi/.50.norm.8.1.state.gif">     Normalization for iteration: 1 <a href="file:///home/demo/sarai-ASR/hindi/logdir/50.cd_hmm_tied/hindi.8.1.norm.log">Log File</a> <p>
+		This step had 568 ERROR messages and 0 WARNING messages.
+		Please check the log file for details.</p>		<font color="00D000"> completed </font>
+	<img src="file:///home/demo/sarai-ASR/hindi/.50.bw.8.2.1.state.gif">     Baum welch starting for 8 Gaussian(s), iteration: 2 (1 of 1) <a href="file:///home/demo/sarai-ASR/hindi/logdir/50.cd_hmm_tied/hindi.8.2-1.bw.log">Log File</a>
+0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100% <p>
+		This step had 80 ERROR messages and 2 WARNING messages.
+		Please check the log file for details.</p>		<font color="00D000"> completed </font>
+	<img src="file:///home/demo/sarai-ASR/hindi/.50.norm.8.2.state.gif">     Normalization for iteration: 2 <a href="file:///home/demo/sarai-ASR/hindi/logdir/50.cd_hmm_tied/hindi.8.2.norm.log">Log File</a> 		<font color="00D000"> completed </font>
+	<img src="file:///home/demo/sarai-ASR/hindi/.50.bw.8.3.1.state.gif">     Baum welch starting for 8 Gaussian(s), iteration: 3 (1 of 1) <a href="file:///home/demo/sarai-ASR/hindi/logdir/50.cd_hmm_tied/hindi.8.3-1.bw.log">Log File</a>
+0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100% <p>
+		This step had 80 ERROR messages and 2 WARNING messages.
+		Please check the log file for details.</p>		<font color="00D000"> completed </font>
+	<img src="file:///home/demo/sarai-ASR/hindi/.50.norm.8.3.state.gif">     Normalization for iteration: 3 <a href="file:///home/demo/sarai-ASR/hindi/logdir/50.cd_hmm_tied/hindi.8.3.norm.log">Log File</a> 		<font color="00D000"> completed </font>
+	<img src="file:///home/demo/sarai-ASR/hindi/.50.bw.8.4.1.state.gif">     Baum welch starting for 8 Gaussian(s), iteration: 4 (1 of 1) <a href="file:///home/demo/sarai-ASR/hindi/logdir/50.cd_hmm_tied/hindi.8.4-1.bw.log">Log File</a>
+0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100% <p>
+		This step had 76 ERROR messages and 2 WARNING messages.
+		Please check the log file for details.</p>		<font color="00D000"> completed </font>
+	<img src="file:///home/demo/sarai-ASR/hindi/.50.norm.8.4.state.gif">     Normalization for iteration: 4 <a href="file:///home/demo/sarai-ASR/hindi/logdir/50.cd_hmm_tied/hindi.8.4.norm.log">Log File</a> 		<font color="00D000"> completed </font>
+	<img src="file:///home/demo/sarai-ASR/hindi/.50.bw.8.5.1.state.gif">     Baum welch starting for 8 Gaussian(s), iteration: 5 (1 of 1) <a href="file:///home/demo/sarai-ASR/hindi/logdir/50.cd_hmm_tied/hindi.8.5-1.bw.log">Log File</a>
+0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100% <p>
+		This step had 74 ERROR messages and 2 WARNING messages.
+		Please check the log file for details.</p>		<font color="00D000"> completed </font>
+	<img src="file:///home/demo/sarai-ASR/hindi/.50.norm.8.5.state.gif">     Normalization for iteration: 5 <a href="file:///home/demo/sarai-ASR/hindi/logdir/50.cd_hmm_tied/hindi.8.5.norm.log">Log File</a> 		<font color="00D000"> completed </font>
+    Split Gaussians, increase by 0
+Training for 8 Gaussian(s) completed after 5 iterations
+<hr>
+<b>MODULE: 60 Training Speaker Adaptive models	(2008-06-30 13:13)</b>
+    Skipped (no speaker list defined in config)
+<hr>
+<b>MODULE: 90 deleted interpolation	(2008-06-30 13:13)</b>
+    Skipped for continuous models
+<hr>
+<b>MODULE: DECODE Decoding using models previously trained	(2008-06-30 14:21)</b>
+	<img src="file:///home/demo/sarai-ASR/hindi/.decode.1.state.gif">     Decoding 0 segments starting at 0 (part 1 of 1) <a href="file:///home/demo/sarai-ASR/hindi/logdir/decode/hindi-1-1.log">Log File</a>
+
+        Using  files: <hr>
+<b>MODULE: DECODE Decoding using models previously trained	(2008-06-30 14:22)</b>
+	<img src="file:///home/demo/sarai-ASR/hindi/.decode.1.state.gif">     Decoding 1471 segments starting at 0 (part 1 of 1) <a href="file:///home/demo/sarai-ASR/hindi/logdir/decode/hindi-1-1.log">Log File</a>
+
+        Using  files: 0% <p>ERROR: SYSTEM_ERROR: "lm_3g_dmp.c", line 1253: fopen(/home/demo/sarai-ASR/hindi/etc/lm/hindi.DMP,rb) failed
+</p>Finished
+SENTENCE ERROR: 100.000% (1471/1471)
+<hr>
+<b>MODULE: DECODE Decoding using models previously trained	(2008-06-30 14:23)</b>
+	<img src="file:///home/demo/sarai-ASR/hindi/.decode.1.state.gif">     Decoding 1471 segments starting at 0 (part 1 of 1) <a href="file:///home/demo/sarai-ASR/hindi/logdir/decode/hindi-1-1.log">Log File</a>
+
+        Using  files: 0% <p>ERROR: ERROR: "vithist.c", line 972: No word exit in frame 1232, using exits from frame 262
+</p><p>ERROR: ERROR: "vithist.c", line 972: No word exit in frame 954, using exits from frame 455
+</p><p>ERROR: ERROR: "vithist.c", line 972: No word exit in frame 1250, using exits from frame 1201
+</p><p>ERROR: ERROR: "vithist.c", line 972: No word exit in frame 998, using exits from frame 820
+</p><p>ERROR: ERROR: "vithist.c", line 972: No word exit in frame 598, using exits from frame 432
+</p>Finished
+SENTENCE ERROR: 100.000% (1471/1471)
+<hr>
+<b>MODULE: 99 Convert to Sphinx2 format models	(2008-08-09 01:37)</b>
+    Can not create models used by Sphinx-II.
+    If you intend to create models to use with Sphinx-II models, please rerun with:
+$ST::CFG_HMM_TYPE = '.semi.' or
+$ST::CFG_HMM_TYPE = '.cont' and $ST::CFG_FEATURE = '1s_12c_12d_3p_12dd' and $ST::CFG_STATESPERHMM = '5'
+<hr>
+<b>MODULE: 99 Convert to Sphinx2 format models	(2008-08-09 01:39)</b>
+    Cleaning up old log files...
+    Copy noise dictionary
+    Make codebooks
+	<a href="file:///home/demo/sarai-ASR/hindi/logdir/99.make_s2_models/hindi.mk_s2cb.log">Log File</a> <p>
+		This step had 1 ERROR messages and 0 WARNING messages.
+		Please check the log file for details.</p>		<font color="00D000"> completed </font>
+    Make chmm files
+	<a href="file:///home/demo/sarai-ASR/hindi/logdir/99.make_s2_models/hindi.mk_s2chmm.log">Log File</a> 		<font color="00D000"> completed </font>
+    Make senone file
+	<a href="file:///home/demo/sarai-ASR/hindi/logdir/99.make_s2_models/hindi.mk_s2sendump.log">Log File</a> <p>FATAL: "mk_s2sendump.c", line 471: fopen(/home/demo/sarai-ASR/hindi/model_parameters/hindi.cd_semi_1000_delinterp/mixture_weights,rb) failed
+</p>		<font color="DD0000"> FAILED </font>
+<hr>
+<b>MODULE: 99 Convert to Sphinx2 format models	(2008-08-09 01:46)</b>
+    Can not create models used by Sphinx-II.
+    If you intend to create models to use with Sphinx-II models, please rerun with:
+$ST::CFG_HMM_TYPE = '.semi.' or
+$ST::CFG_HMM_TYPE = '.cont' and $ST::CFG_FEATURE = '1s_12c_12d_3p_12dd' and $ST::CFG_STATESPERHMM = '5'
+<hr>
+<b>MODULE: 99 Convert to Sphinx2 format models	(2008-08-09 01:48)</b>
+    Cleaning up old log files...
+    Copy noise dictionary
+    Copying mdef, means, vars, mix_weights
+    Make chmm files
+	<a href="file:///home/demo/sarai-ASR/hindi/logdir/99.make_s2_models/hindi.mk_s2chmm.log">Log File</a> 		<font color="00D000"> completed </font>
+    Make phone and map files
+	<a href="file:///home/demo/sarai-ASR/hindi/logdir/99.make_s2_models/hindi.mk_s2phonemap.log">Log File</a> 		<font color="00D000"> completed </font>
+<hr>
+<b>MODULE: DECODE Decoding using models previously trained	(2008-08-13 17:46)</b>
+	<img src="file:///home/demo/sarai-ASR/hindi/.decode.1.state.gif">     Decoding 1 segments starting at 0 (part 1 of 1) <a href="file:///home/demo/sarai-ASR/hindi/logdir/decode/hindi-1-1.log">Log File</a>
+
+        Using  files: 0% <p>ERROR: SYSTEM_ERROR: "lm_3g_dmp.c", line 1253: fopen(/home/demo/sarai-ASR/hindi/etc/lm/hindi.DMP,rb) failed
+</p>Finished
+<hr>
+<b>MODULE: DECODE Decoding using models previously trained	(2008-08-13 17:47)</b>
+	<img src="file:///home/demo/sarai-ASR/hindi/.decode.1.state.gif">     Decoding 1 segments starting at 0 (part 1 of 1) <a href="file:///home/demo/sarai-ASR/hindi/logdir/decode/hindi-1-1.log">Log File</a>
+
+        Using  files: 0% <p>ERROR: SYSTEM_ERROR: "lm_3g_dmp.c", line 1253: fopen(/home/demo/sarai-ASR/hindi/etc/lm/hindi.DMP,rb) failed
+</p>Finished
+SENTENCE ERROR: 100.000% (1/1)
+<hr>
+<b>MODULE: DECODE Decoding using models previously trained	(2008-08-13 17:48)</b>
+	<img src="file:///home/demo/sarai-ASR/hindi/.decode.1.state.gif">     Decoding 1 segments starting at 0 (part 1 of 1) <a href="file:///home/demo/sarai-ASR/hindi/logdir/decode/hindi-1-1.log">Log File</a>
+
+        Using  files: 0% <p>ERROR: SYSTEM_ERROR: "lm_3g_dmp.c", line 1253: fopen(/home/demo/sarai-ASR/hindi/etc/lm/hindi.DMP,rb) failed
+</p>Finished
+SENTENCE ERROR: 100.000% (1/1)
+<hr>
+<b>MODULE: DECODE Decoding using models previously trained	(2008-08-13 17:48)</b>
+	<img src="file:///home/demo/sarai-ASR/hindi/.decode.1.state.gif">     Decoding 1 segments starting at 0 (part 1 of 1) <a href="file:///home/demo/sarai-ASR/hindi/logdir/decode/hindi-1-1.log">Log File</a>
+
+        Using  files: 0% <p>ERROR: SYSTEM_ERROR: "lm_3g_dmp.c", line 1253: fopen(/home/demo/sarai-ASR/hindi/etc/lm/hindi.DMP,rb) failed
+</p>Finished
+SENTENCE ERROR: 100.000% (1/1)
+<hr>
+<b>MODULE: DECODE Decoding using models previously trained	(2008-08-13 17:49)</b>
+	<img src="file:///home/demo/sarai-ASR/hindi/.decode.1.state.gif">     Decoding 1 segments starting at 0 (part 1 of 1) <a href="file:///home/demo/sarai-ASR/hindi/logdir/decode/hindi-1-1.log">Log File</a>
+
+        Using  files: 0% Finished
+SENTENCE ERROR: 100.000% (1/1)
+<hr>
+<b>MODULE: DECODE Decoding using models previously trained	(2008-08-13 17:49)</b>
+	<img src="file:///home/demo/sarai-ASR/hindi/.decode.1.state.gif">     Decoding 1 segments starting at 0 (part 1 of 1) <a href="file:///home/demo/sarai-ASR/hindi/logdir/decode/hindi-1-1.log">Log File</a>
+
+        Using  files: 0% Finished
+SENTENCE ERROR: 100.000% (1/1)
+<hr>
+<b>MODULE: DECODE Decoding using models previously trained	(2008-08-13 17:49)</b>
+	<img src="file:///home/demo/sarai-ASR/hindi/.decode.1.state.gif">     Decoding 1 segments starting at 0 (part 1 of 1) <a href="file:///home/demo/sarai-ASR/hindi/logdir/decode/hindi-1-1.log">Log File</a>
+
+        Using  files: 0% Finished
+SENTENCE ERROR: 100.000% (1/1)
+<hr>
+<b>MODULE: DECODE Decoding using models previously trained	(2008-08-13 17:51)</b>
+	<img src="file:///home/demo/sarai-ASR/hindi/.decode.1.state.gif">     Decoding 1 segments starting at 0 (part 1 of 1) <a href="file:///home/demo/sarai-ASR/hindi/logdir/decode/hindi-1-1.log">Log File</a>
+
+        Using  files: 0% Finished
+SENTENCE ERROR: 100.000% (1/1)
+<hr>
+<b>MODULE: DECODE Decoding using models previously trained	(2008-08-13 17:52)</b>
+	<img src="file:///home/demo/sarai-ASR/hindi/.decode.1.state.gif">     Decoding 1 segments starting at 0 (part 1 of 1) <a href="file:///home/demo/sarai-ASR/hindi/logdir/decode/hindi-1-1.log">Log File</a>
+
+        Using  files: 0% Finished
+SENTENCE ERROR: 100.000% (1/1)
+<hr>
+<b>MODULE: DECODE Decoding using models previously trained	(2008-08-13 17:52)</b>
+	<img src="file:///home/demo/sarai-ASR/hindi/.decode.1.state.gif">     Decoding 1 segments starting at 0 (part 1 of 1) <a href="file:///home/demo/sarai-ASR/hindi/logdir/decode/hindi-1-1.log">Log File</a>
+
+        Using  files: 0% Finished
+SENTENCE ERROR: 100.000% (1/1)
+<hr>
+<b>MODULE: 99 Convert to Sphinx2 format models	(2008-08-13 17:54)</b>
+    Cleaning up old log files...
+    Copy noise dictionary
+    Copying mdef, means, vars, mix_weights
+    Make chmm files
+	<a href="file:///home/demo/sarai-ASR/hindi/logdir/99.make_s2_models/hindi.mk_s2chmm.log">Log File</a> 		<font color="00D000"> completed </font>
+    Make phone and map files
+	<a href="file:///home/demo/sarai-ASR/hindi/logdir/99.make_s2_models/hindi.mk_s2phonemap.log">Log File</a> 		<font color="00D000"> completed </font>
+<hr>
+<b>MODULE: 99 Convert to Sphinx2 format models	(2008-08-13 17:55)</b>
+    Can not create models used by Sphinx-II.
+    If you intend to create models to use with Sphinx-II models, please rerun with:
+$ST::CFG_HMM_TYPE = '.semi.' or
+$ST::CFG_HMM_TYPE = '.cont' and $ST::CFG_FEATURE = '1s_12c_12d_3p_12dd' and $ST::CFG_STATESPERHMM = '5'
+<hr>
+<b>MODULE: DECODE Decoding using models previously trained	(2008-08-13 17:56)</b>
+	<img src="file:///home/demo/sarai-ASR/hindi/.decode.1.state.gif">     Decoding 1 segments starting at 0 (part 1 of 1) <a href="file:///home/demo/sarai-ASR/hindi/logdir/decode/hindi-1-1.log">Log File</a>
+
+        Using  files: 0% Finished
+SENTENCE ERROR: 100.000% (1/1)
+<hr>
+<b>MODULE: DECODE Decoding using models previously trained	(2008-08-13 17:59)</b>
+	<img src="file:///home/demo/sarai-ASR/hindi/.decode.1.state.gif">     Decoding 1 segments starting at 0 (part 1 of 1) <a href="file:///home/demo/sarai-ASR/hindi/logdir/decode/hindi-1-1.log">Log File</a>
+
+        Using  files: 0% Finished
+SENTENCE ERROR: 100.000% (1/1)
+<hr>
+<b>MODULE: DECODE Decoding using models previously trained	(2008-08-13 17:59)</b>
+	<img src="file:///home/demo/sarai-ASR/hindi/.decode.1.state.gif">     Decoding 1 segments starting at 0 (part 1 of 1) <a href="file:///home/demo/sarai-ASR/hindi/logdir/decode/hindi-1-1.log">Log File</a>
+
+        Using  files: 0% Finished
+SENTENCE ERROR: 100.000% (1/1)
+<hr>
+<b>MODULE: DECODE Decoding using models previously trained	(2008-08-13 18:01)</b>
+	<img src="file:///home/demo/sarai-ASR/hindi/.decode.1.state.gif">     Decoding 1 segments starting at 0 (part 1 of 1) <a href="file:///home/demo/sarai-ASR/hindi/logdir/decode/hindi-1-1.log">Log File</a>
+
+        Using  files: 0% Finished
+SENTENCE ERROR: 100.000% (1/1)
+<hr>
+<b>MODULE: DECODE Decoding using models previously trained	(2008-08-19 15:36)</b>
+	<img src="file:///home/demo/sarai-ASR/hindi/.decode.1.state.gif">     Decoding 1 segments starting at 0 (part 1 of 1) <a href="file:///home/demo/sarai-ASR/hindi/logdir/decode/hindi-1-1.log">Log File</a>
+
+        Using  files: 0% Finished
+SENTENCE ERROR: 100.000% (1/1)
+<hr>
+<b>MODULE: DECODE Decoding using models previously trained	(2008-08-19 15:52)</b>
+	<img src="file:///home/demo/sarai-ASR/hindi/.decode.1.state.gif">     Decoding 1 segments starting at 0 (part 1 of 1) <a href="file:///home/demo/sarai-ASR/hindi/logdir/decode/hindi-1-1.log">Log File</a>
+
+        Using  files: 0% Finished
+SENTENCE ERROR: 100.000% (1/1)
+<hr>
+<b>MODULE: DECODE Decoding using models previously trained	(2008-08-19 15:53)</b>
+	<img src="file:///home/demo/sarai-ASR/hindi/.decode.1.state.gif">     Decoding 1 segments starting at 0 (part 1 of 1) <a href="file:///home/demo/sarai-ASR/hindi/logdir/decode/hindi-1-1.log">Log File</a>
+
+        Using  files: 0% Finished
+SENTENCE ERROR: 100.000% (1/1)
+<hr>
+<b>MODULE: DECODE Decoding using models previously trained	(2008-08-20 16:40)</b>
+	<img src="file:///home/demo/sarai-ASR/hindi/.decode.1.state.gif">     Decoding 1 segments starting at 0 (part 1 of 1) <a href="file:///home/demo/sarai-ASR/hindi/logdir/decode/hindi-1-1.log">Log File</a>
+
+        Using  files: 0% Finished
+SENTENCE ERROR: 100.000% (1/1)
+<hr>
+<b>MODULE: DECODE Decoding using models previously trained	(2008-08-20 16:52)</b>
+	<img src="file:///home/demo/sarai-ASR/hindi/.decode.1.state.gif">     Decoding 1 segments starting at 0 (part 1 of 1) <a href="file:///home/demo/sarai-ASR/hindi/logdir/decode/hindi-1-1.log">Log File</a>
+
+        Using  files: 0% Finished
+SENTENCE ERROR: 100.000% (1/1)
+<hr>
+<b>MODULE: DECODE Decoding using models previously trained	(2008-08-20 16:53)</b>
+	<img src="file:///home/demo/sarai-ASR/hindi/.decode.1.state.gif">     Decoding 1 segments starting at 0 (part 1 of 1) <a href="file:///home/demo/sarai-ASR/hindi/logdir/decode/hindi-1-1.log">Log File</a>
+
+        Using  files: 0% Finished
+SENTENCE ERROR: 100.000% (1/1)
+<hr>
+<b>MODULE: DECODE Decoding using models previously trained	(2008-08-20 20:36)</b>
+	<img src="file:///home/demo/sarai-ASR/hindi/.decode.1.state.gif">     Decoding 1 segments starting at 0 (part 1 of 1) <a href="file:///home/demo/sarai-ASR/hindi/logdir/decode/hindi-1-1.log">Log File</a>
+
+        Using  files: 0% Finished
+SENTENCE ERROR: 100.000% (1/1)
+<hr>
+<b>MODULE: DECODE Decoding using models previously trained	(2008-08-20 20:37)</b>
+	<img src="file:///home/demo/sarai-ASR/hindi/.decode.1.state.gif">     Decoding 1 segments starting at 0 (part 1 of 1) <a href="file:///home/demo/sarai-ASR/hindi/logdir/decode/hindi-1-1.log">Log File</a>
+
+        Using  files: 0% Finished
+SENTENCE ERROR: 100.000% (1/1)
+<hr>
+<b>MODULE: DECODE Decoding using models previously trained	(2008-08-20 20:38)</b>
+	<img src="file:///home/demo/sarai-ASR/hindi/.decode.1.state.gif">     Decoding 1 segments starting at 0 (part 1 of 1) <a href="file:///home/demo/sarai-ASR/hindi/logdir/decode/hindi-1-1.log">Log File</a>
+
+        Using  files: 0% Finished
+SENTENCE ERROR: 100.000% (1/1)
+<hr>
+<b>MODULE: DECODE Decoding using models previously trained	(2008-08-20 20:38)</b>
+	<img src="file:///home/demo/sarai-ASR/hindi/.decode.1.state.gif">     Decoding 1 segments starting at 0 (part 1 of 1) <a href="file:///home/demo/sarai-ASR/hindi/logdir/decode/hindi-1-1.log">Log File</a>
+
+        Using  files: 0% Finished
+SENTENCE ERROR: 100.000% (1/1)
+<hr>
+<b>MODULE: DECODE Decoding using models previously trained	(2008-08-22 12:53)</b>
+	<img src="file:///home/demo/sarai-ASR/hindi/.decode.1.state.gif">     Decoding 1 segments starting at 0 (part 1 of 1) <a href="file:///home/demo/sarai-ASR/hindi/logdir/decode/hindi-1-1.log">Log File</a>
+
+        Using  files: 0% Finished
+SENTENCE ERROR: 100.000% (1/1)
+<hr>
+<b>MODULE: DECODE Decoding using models previously trained	(2008-08-22 12:59)</b>
+	<img src="file:///home/demo/sarai-ASR/hindi/.decode.1.state.gif">     Decoding 1 segments starting at 0 (part 1 of 1) <a href="file:///home/demo/sarai-ASR/hindi/logdir/decode/hindi-1-1.log">Log File</a>
+
+        Using  files: 0% Finished
+SENTENCE ERROR: 100.000% (1/1)
+<hr>
+<b>MODULE: DECODE Decoding using models previously trained	(2008-08-22 12:59)</b>
+	<img src="file:///home/demo/sarai-ASR/hindi/.decode.1.state.gif">     Decoding 1 segments starting at 0 (part 1 of 1) <a href="file:///home/demo/sarai-ASR/hindi/logdir/decode/hindi-1-1.log">Log File</a>
+
+        Using  files: 0% Finished
+SENTENCE ERROR: 100.000% (1/1)
+<hr>
+<b>MODULE: DECODE Decoding using models previously trained	(2008-08-22 13:03)</b>
+	<img src="file:///home/demo/sarai-ASR/hindi/.decode.1.state.gif">     Decoding 1 segments starting at 0 (part 1 of 1) <a href="file:///home/demo/sarai-ASR/hindi/logdir/decode/hindi-1-1.log">Log File</a>
+
+        Using  files: 0% SENTENCE ERROR: 100.000% (1/1)
+<hr>
+<b>MODULE: DECODE Decoding using models previously trained	(2008-08-22 13:03)</b>
+	<img src="file:///home/demo/sarai-ASR/hindi/.decode.1.state.gif">     Decoding 1 segments starting at 0 (part 1 of 1) <a href="file:///home/demo/sarai-ASR/hindi/logdir/decode/hindi-1-1.log">Log File</a>
+
+        Using  files: 0% Finished
+SENTENCE ERROR: 100.000% (1/1)
+<hr>
+<b>MODULE: DECODE Decoding using models previously trained	(2008-08-22 13:03)</b>
+	<img src="file:///home/demo/sarai-ASR/hindi/.decode.1.state.gif">     Decoding 1 segments starting at 0 (part 1 of 1) <a href="file:///home/demo/sarai-ASR/hindi/logdir/decode/hindi-1-1.log">Log File</a>
+
+        Using  files: 0% Finished
+SENTENCE ERROR: 100.000% (1/1)
+<hr>
+<b>MODULE: DECODE Decoding using models previously trained	(2008-08-22 13:06)</b>
+	<img src="file:///home/demo/sarai-ASR/hindi/.decode.1.state.gif">     Decoding 1 segments starting at 0 (part 1 of 1) <a href="file:///home/demo/sarai-ASR/hindi/logdir/decode/hindi-1-1.log">Log File</a>
+
+        Using  files: 0% Finished
+SENTENCE ERROR: 100.000% (1/1)
+<hr>
+<b>MODULE: DECODE Decoding using models previously trained	(2008-08-22 13:06)</b>
+	<img src="file:///home/demo/sarai-ASR/hindi/.decode.1.state.gif">     Decoding 1 segments starting at 0 (part 1 of 1) <a href="file:///home/demo/sarai-ASR/hindi/logdir/decode/hindi-1-1.log">Log File</a>
+
+        Using  files: 0% Finished
+SENTENCE ERROR: 100.000% (1/1)
+<hr>
+<b>MODULE: DECODE Decoding using models previously trained	(2008-08-22 13:07)</b>
+	<img src="file:///home/demo/sarai-ASR/hindi/.decode.1.state.gif">     Decoding 1 segments starting at 0 (part 1 of 1) <a href="file:///home/demo/sarai-ASR/hindi/logdir/decode/hindi-1-1.log">Log File</a>
+
+        Using  files: 0% Finished
+SENTENCE ERROR: 100.000% (1/1)
+<hr>
+<b>MODULE: DECODE Decoding using models previously trained	(2008-08-22 13:09)</b>
+	<img src="file:///home/demo/sarai-ASR/hindi/.decode.1.state.gif">     Decoding 1 segments starting at 0 (part 1 of 1) <a href="file:///home/demo/sarai-ASR/hindi/logdir/decode/hindi-1-1.log">Log File</a>
+
+        Using  files: 0% Finished
+SENTENCE ERROR: 100.000% (1/1)
+<hr>
+<b>MODULE: DECODE Decoding using models previously trained	(2008-08-22 13:10)</b>
+	<img src="file:///home/demo/sarai-ASR/hindi/.decode.1.state.gif">     Decoding 1 segments starting at 0 (part 1 of 1) <a href="file:///home/demo/sarai-ASR/hindi/logdir/decode/hindi-1-1.log">Log File</a>
+
+        Using  files: 0% Finished
+SENTENCE ERROR: 100.000% (1/1)
+<hr>
+<b>MODULE: DECODE Decoding using models previously trained	(2008-08-22 13:11)</b>
+	<img src="file:///home/demo/sarai-ASR/hindi/.decode.1.state.gif">     Decoding 1 segments starting at 0 (part 1 of 1) <a href="file:///home/demo/sarai-ASR/hindi/logdir/decode/hindi-1-1.log">Log File</a>
+
+        Using  files: 0% Finished
+SENTENCE ERROR: 100.000% (1/1)
+<hr>
+<b>MODULE: DECODE Decoding using models previously trained	(2008-08-22 13:14)</b>
+	<img src="file:///home/demo/sarai-ASR/hindi/.decode.1.state.gif">     Decoding 1 segments starting at 0 (part 1 of 1) <a href="file:///home/demo/sarai-ASR/hindi/logdir/decode/hindi-1-1.log">Log File</a>
+
+        Using  files: 0% Finished
+SENTENCE ERROR: 100.000% (1/1)
+<hr>
+<b>MODULE: DECODE Decoding using models previously trained	(2008-08-22 13:15)</b>
+	<img src="file:///home/demo/sarai-ASR/hindi/.decode.1.state.gif">     Decoding 1 segments starting at 0 (part 1 of 1) <a href="file:///home/demo/sarai-ASR/hindi/logdir/decode/hindi-1-1.log">Log File</a>
+
+        Using  files: 0% Finished
+SENTENCE ERROR: 100.000% (1/1)
+<hr>
+<b>MODULE: DECODE Decoding using models previously trained	(2008-08-22 13:15)</b>
+	<img src="file:///home/demo/sarai-ASR/hindi/.decode.1.state.gif">     Decoding 1 segments starting at 0 (part 1 of 1) <a href="file:///home/demo/sarai-ASR/hindi/logdir/decode/hindi-1-1.log">Log File</a>
+
+        Using  files: 0% Finished
+SENTENCE ERROR: 100.000% (1/1)
+<hr>
+<b>MODULE: DECODE Decoding using models previously trained	(2008-08-22 13:16)</b>
+	<img src="file:///home/demo/sarai-ASR/hindi/.decode.1.state.gif">     Decoding 1 segments starting at 0 (part 1 of 1) <a href="file:///home/demo/sarai-ASR/hindi/logdir/decode/hindi-1-1.log">Log File</a>
+
+        Using  files: 0% Finished
+SENTENCE ERROR: 100.000% (1/1)
+<hr>
+<b>MODULE: DECODE Decoding using models previously trained	(2008-08-22 13:17)</b>
+	<img src="file:///home/demo/sarai-ASR/hindi/.decode.1.state.gif">     Decoding 1 segments starting at 0 (part 1 of 1) <a href="file:///home/demo/sarai-ASR/hindi/logdir/decode/hindi-1-1.log">Log File</a>
+
+        Using  files: 0% Finished
+SENTENCE ERROR: 100.000% (1/1)
+<hr>
+<b>MODULE: DECODE Decoding using models previously trained	(2008-08-22 13:17)</b>
+	<img src="file:///home/demo/sarai-ASR/hindi/.decode.1.state.gif">     Decoding 1 segments starting at 0 (part 1 of 1) <a href="file:///home/demo/sarai-ASR/hindi/logdir/decode/hindi-1-1.log">Log File</a>
+
+        Using  files: 0% Finished
+SENTENCE ERROR: 100.000% (1/1)
+<hr>
+<b>MODULE: DECODE Decoding using models previously trained	(2008-08-22 13:18)</b>
+	<img src="file:///home/demo/sarai-ASR/hindi/.decode.1.state.gif">     Decoding 1 segments starting at 0 (part 1 of 1) <a href="file:///home/demo/sarai-ASR/hindi/logdir/decode/hindi-1-1.log">Log File</a>
+
+        Using  files: 0% Finished
+SENTENCE ERROR: 100.000% (1/1)
+<hr>
+<b>MODULE: DECODE Decoding using models previously trained	(2008-08-28 00:29)</b>
+	<img src="file:///home/sachin/myprojects/SaraiSpeechFellowship/Releases/2.0/hindi/.decode.1.state.gif">     Decoding 1 segments starting at 0 (part 1 of 1) <a href="file:///home/sachin/myprojects/SaraiSpeechFellowship/Releases/2.0/hindi/logdir/decode/hindi-1-1.log">Log File</a>
+
+        Using  files: 0% Finished
+SENTENCE ERROR: 100.000% (1/1)
+<hr>
+<b>MODULE: DECODE Decoding using models previously trained	(2008-08-28 00:32)</b>
+	<img src="file:///home/sachin/myprojects/SaraiSpeechFellowship/Releases/2.0/hindi/.decode.1.state.gif">     Decoding 1 segments starting at 0 (part 1 of 1) <a href="file:///home/sachin/myprojects/SaraiSpeechFellowship/Releases/2.0/hindi/logdir/decode/hindi-1-1.log">Log File</a>
+
+        Using  files: 0% Finished
+SENTENCE ERROR: 100.000% (1/1)
+<hr>
+<b>MODULE: DECODE Decoding using models previously trained	(2008-08-28 00:32)</b>
+	<img src="file:///home/sachin/myprojects/SaraiSpeechFellowship/Releases/2.0/hindi/.decode.1.state.gif">     Decoding 1 segments starting at 0 (part 1 of 1) <a href="file:///home/sachin/myprojects/SaraiSpeechFellowship/Releases/2.0/hindi/logdir/decode/hindi-1-1.log">Log File</a>
+
+        Using  files: 0% Finished
+SENTENCE ERROR: 100.000% (1/1)
+<hr>
+<b>MODULE: DECODE Decoding using models previously trained	(2008-08-28 00:33)</b>
+	<img src="file:///home/sachin/myprojects/SaraiSpeechFellowship/Releases/2.0/hindi/.decode.1.state.gif">     Decoding 1 segments starting at 0 (part 1 of 1) <a href="file:///home/sachin/myprojects/SaraiSpeechFellowship/Releases/2.0/hindi/logdir/decode/hindi-1-1.log">Log File</a>
+
+        Using  files: 0% Finished
+SENTENCE ERROR: 100.000% (1/1)
+<hr>
+<b>MODULE: DECODE Decoding using models previously trained	(2008-08-28 00:34)</b>
+	<img src="file:///home/sachin/myprojects/SaraiSpeechFellowship/Releases/2.0/hindi/.decode.1.state.gif">     Decoding 1 segments starting at 0 (part 1 of 1) <a href="file:///home/sachin/myprojects/SaraiSpeechFellowship/Releases/2.0/hindi/logdir/decode/hindi-1-1.log">Log File</a>
+
+        Using  files: 0% Finished
+SENTENCE ERROR: 100.000% (1/1)
+<hr>
+<b>MODULE: DECODE Decoding using models previously trained	(2008-08-28 00:35)</b>
+	<img src="file:///home/sachin/myprojects/SaraiSpeechFellowship/Releases/2.0/hindi/.decode.1.state.gif">     Decoding 1 segments starting at 0 (part 1 of 1) <a href="file:///home/sachin/myprojects/SaraiSpeechFellowship/Releases/2.0/hindi/logdir/decode/hindi-1-1.log">Log File</a>
+
+        Using  files: 0% Finished
+SENTENCE ERROR: 100.000% (1/1)
+<hr>
+<b>MODULE: DECODE Decoding using models previously trained	(2008-08-28 00:35)</b>
+	<img src="file:///home/sachin/myprojects/SaraiSpeechFellowship/Releases/2.0/hindi/.decode.1.state.gif">     Decoding 1 segments starting at 0 (part 1 of 1) <a href="file:///home/sachin/myprojects/SaraiSpeechFellowship/Releases/2.0/hindi/logdir/decode/hindi-1-1.log">Log File</a>
+
+        Using  files: 0% Finished
+SENTENCE ERROR: 100.000% (1/1)
+<hr>
+<b>MODULE: DECODE Decoding using models previously trained	(2008-08-28 00:38)</b>
+	<img src="file:///home/sachin/myprojects/SaraiSpeechFellowship/Releases/2.0/hindi/.decode.1.state.gif">     Decoding 1 segments starting at 0 (part 1 of 1) <a href="file:///home/sachin/myprojects/SaraiSpeechFellowship/Releases/2.0/hindi/logdir/decode/hindi-1-1.log">Log File</a>
+
+        Using  files: 0% Finished
+SENTENCE ERROR: 100.000% (1/1)
+<hr>
+<b>MODULE: DECODE Decoding using models previously trained	(2008-08-28 00:38)</b>
+	<img src="file:///home/sachin/myprojects/SaraiSpeechFellowship/Releases/2.0/hindi/.decode.1.state.gif">     Decoding 1 segments starting at 0 (part 1 of 1) <a href="file:///home/sachin/myprojects/SaraiSpeechFellowship/Releases/2.0/hindi/logdir/decode/hindi-1-1.log">Log File</a>
+
+        Using  files: 0% Finished
+SENTENCE ERROR: 100.000% (1/1)
+<hr>
+<b>MODULE: DECODE Decoding using models previously trained	(2008-08-28 01:20)</b>
+	<img src="file:///home/sachin/myprojects/SaraiSpeechFellowship/Releases/2.0/hindi/.decode.1.state.gif">     Decoding 1 segments starting at 0 (part 1 of 1) <a href="file:///home/sachin/myprojects/SaraiSpeechFellowship/Releases/2.0/hindi/logdir/decode/hindi-1-1.log">Log File</a>
+
+        Using  files: 0% Finished
+SENTENCE ERROR: 100.000% (1/1)
+<hr>
+<b>MODULE: DECODE Decoding using models previously trained	(2008-08-28 01:34)</b>
+	<img src="file:///home/sachin/myprojects/SaraiSpeechFellowship/Releases/2.0/hindi/.decode.1.state.gif">     Decoding 1 segments starting at 0 (part 1 of 1) <a href="file:///home/sachin/myprojects/SaraiSpeechFellowship/Releases/2.0/hindi/logdir/decode/hindi-1-1.log">Log File</a>
+
+        Using  files: 0% Finished
+SENTENCE ERROR: 100.000% (1/1)
+<hr>
+<b>MODULE: DECODE Decoding using models previously trained	(2008-08-28 01:37)</b>
+	<img src="file:///home/sachin/myprojects/SaraiSpeechFellowship/Releases/2.0/hindi/.decode.1.state.gif">     Decoding 1 segments starting at 0 (part 1 of 1) <a href="file:///home/sachin/myprojects/SaraiSpeechFellowship/Releases/2.0/hindi/logdir/decode/hindi-1-1.log">Log File</a>
+
+        Using  files: 0% Finished
+SENTENCE ERROR: 100.000% (1/1)
+<hr>
+<b>MODULE: DECODE Decoding using models previously trained	(2008-08-28 01:38)</b>
+	<img src="file:///home/sachin/myprojects/SaraiSpeechFellowship/Releases/2.0/hindi/.decode.1.state.gif">     Decoding 1 segments starting at 0 (part 1 of 1) <a href="file:///home/sachin/myprojects/SaraiSpeechFellowship/Releases/2.0/hindi/logdir/decode/hindi-1-1.log">Log File</a>
+
+        Using  files: 0% Finished
+SENTENCE ERROR: 100.000% (1/1)
+<hr>
+<b>MODULE: DECODE Decoding using models previously trained	(2008-08-28 01:39)</b>
+	<img src="file:///home/sachin/myprojects/SaraiSpeechFellowship/Releases/2.0/hindi/.decode.1.state.gif">     Decoding 1 segments starting at 0 (part 1 of 1) <a href="file:///home/sachin/myprojects/SaraiSpeechFellowship/Releases/2.0/hindi/logdir/decode/hindi-1-1.log">Log File</a>
+
+        Using  files: 0% Finished
+SENTENCE ERROR: 100.000% (1/1)
+<hr>
+<b>MODULE: DECODE Decoding using models previously trained	(2008-08-28 01:39)</b>
+	<img src="file:///home/sachin/myprojects/SaraiSpeechFellowship/Releases/2.0/hindi/.decode.1.state.gif">     Decoding 1 segments starting at 0 (part 1 of 1) <a href="file:///home/sachin/myprojects/SaraiSpeechFellowship/Releases/2.0/hindi/logdir/decode/hindi-1-1.log">Log File</a>
+
+        Using  files: 0% Finished
+SENTENCE ERROR: 100.000% (1/1)
+<hr>
+<b>MODULE: DECODE Decoding using models previously trained	(2008-08-28 01:40)</b>
+	<img src="file:///home/sachin/myprojects/SaraiSpeechFellowship/Releases/2.0/hindi/.decode.1.state.gif">     Decoding 1 segments starting at 0 (part 1 of 1) <a href="file:///home/sachin/myprojects/SaraiSpeechFellowship/Releases/2.0/hindi/logdir/decode/hindi-1-1.log">Log File</a>
+
+        Using  files: 0% Finished
+SENTENCE ERROR: 100.000% (1/1)
+<hr>
+<b>MODULE: DECODE Decoding using models previously trained	(2008-08-28 10:54)</b>
+	<img src="file:///home/sachin/myprojects/SaraiSpeechFellowship/Releases/2.0/hindi/.decode.1.state.gif">     Decoding 1 segments starting at 0 (part 1 of 1) <a href="file:///home/sachin/myprojects/SaraiSpeechFellowship/Releases/2.0/hindi/logdir/decode/hindi-1-1.log">Log File</a>
+
+        Using  files: 0% Finished
+SENTENCE ERROR: 100.000% (1/1)

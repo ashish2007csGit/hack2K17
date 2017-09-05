@@ -1,0 +1,339 @@
+INFO: info.c(63): Host: 'speech36'
+INFO: info.c(64): Directory: '/home/sachin/myprojects/SaraiSpeechFellowship/Releases/2.0/hindi'
+INFO: info.c(68): /home/sachin/speech/sphinx3-0.6/src/programs/.libs/lt-decode Compiled on: Oct  8 2007, AT: 21:05:01
+
+INFO: cmd_ln.c(399): Parsing command line:
+/home/sachin/speech/sphinx3-0.6/src/programs/.libs/lt-decode \
+	-mdef /home/sachin/myprojects/SaraiSpeechFellowship/Releases/2.0/hindi/model_architecture/hindi.1000.mdef \
+	-senmgau .cont. \
+	-mean /home/sachin/myprojects/SaraiSpeechFellowship/Releases/2.0/hindi/model_parameters/hindi.cd_cont_1000_8/means \
+	-var /home/sachin/myprojects/SaraiSpeechFellowship/Releases/2.0/hindi/model_parameters/hindi.cd_cont_1000_8/variances \
+	-mixw /home/sachin/myprojects/SaraiSpeechFellowship/Releases/2.0/hindi/model_parameters/hindi.cd_cont_1000_8/mixture_weights \
+	-tmat /home/sachin/myprojects/SaraiSpeechFellowship/Releases/2.0/hindi/model_parameters/hindi.cd_cont_1000_8/transition_matrices \
+	-lw 10 \
+	-feat 1s_c_d_dd \
+	-beam 1e-80 \
+	-wbeam 1e-40 \
+	-dict /home/sachin/myprojects/SaraiSpeechFellowship/Releases/2.0/hindi/etc/hindi.dic \
+	-fdict /home/sachin/myprojects/SaraiSpeechFellowship/Releases/2.0/hindi/etc/hindi.filler \
+	-lm /home/sachin/myprojects/SaraiSpeechFellowship/Releases/2.0/hindi/etc/lm/hindi.DMP \
+	-wip 0.2 \
+	-ctl /home/sachin/myprojects/SaraiSpeechFellowship/Releases/2.0/hindi/etc/hindi_test.fileids \
+	-ctloffset 0 \
+	-ctlcount 1 \
+	-cepdir /home/sachin/myprojects/SaraiSpeechFellowship/Releases/2.0/hindi/feat \
+	-cepext .mfc \
+	-hyp /home/sachin/myprojects/SaraiSpeechFellowship/Releases/2.0/hindi/result/hindi-1-1.match \
+	-agc none \
+	-varnorm no \
+	-cmn current 
+
+Current configuration:
+[NAME]			[DEFLT]		[VALUE]
+-agc			none		none
+-backtrace		1		1
+-beam			1.0e-55		1.000000e-80
+-bestpath		0		0
+-bestpathlw				
+-bestscoredir				
+-bestsenscrdir				
+-bghist			0		0
+-bptbldir				
+-bptblsize		32768		32768
+-bt_wsil		1		1
+-cb2mllr		.1cls.		.1cls.
+-cepdir					/home/sachin/myprojects/SaraiSpeechFellowship/Releases/2.0/hindi/feat
+-cepext			.mfc		.mfc
+-ci_pbeam		1e-80		1.000000e-80
+-cmn			current		current
+-composite		1		1
+-cond_ds		0		0
+-ctl					/home/sachin/myprojects/SaraiSpeechFellowship/Releases/2.0/hindi/etc/hindi_test.fileids
+-ctlcount		1000000000	1
+-ctloffset		0		0
+-ctl_lm					
+-ctl_mllr				
+-dagfudge		2		2
+-dict					/home/sachin/myprojects/SaraiSpeechFellowship/Releases/2.0/hindi/etc/hindi.dic
+-dist_ds		0		0
+-ds			1		1
+-epl			3		3
+-fdict					/home/sachin/myprojects/SaraiSpeechFellowship/Releases/2.0/hindi/etc/hindi.filler
+-feat			1s_c_d_dd	1s_c_d_dd
+-fillpen				
+-fillprob		0.1		1.000000e-01
+-fsg					
+-fsgusealtpron		1		1
+-fsgusefiller		1		1
+-gs					
+-gs4gs			1		1
+-hmm					
+-hmmdump		0		0
+-hmmdumpef		200000000	200000000
+-hmmdumpsf		200000000	200000000
+-hmmhistbinsize		5000		5000
+-hyp					/home/sachin/myprojects/SaraiSpeechFellowship/Releases/2.0/hindi/result/hindi-1-1.match
+-hypseg					
+-hypsegfmt		0		0
+-hypsegscore_unscale	1		1
+-inlatdir				
+-inlatwin		50		50
+-latcompress		1		1
+-latext			lat.gz		lat.gz
+-lextreedump		0		0
+-lm					/home/sachin/myprojects/SaraiSpeechFellowship/Releases/2.0/hindi/etc/lm/hindi.DMP
+-lmctlfn				
+-lmdumpdir				
+-lminmemory		0		0
+-lmname					
+-lmrescore		1		1
+-log3table		1		1
+-logbase		1.0003		1.000300e+00
+-logfn					
+-lts_mismatch		0		0
+-lw			9.5		1.000000e+01
+-maxcdsenpf		100000		100000
+-maxedge		2000000		2000000
+-maxhistpf		100		100
+-maxhmmpf		20000		20000
+-maxlmop		100000000	100000000
+-maxlpf			40000		40000
+-maxwpf			20		20
+-mdef					/home/sachin/myprojects/SaraiSpeechFellowship/Releases/2.0/hindi/model_architecture/hindi.1000.mdef
+-mean					/home/sachin/myprojects/SaraiSpeechFellowship/Releases/2.0/hindi/model_parameters/hindi.cd_cont_1000_8/means
+-min_endfr		3		3
+-mixw					/home/sachin/myprojects/SaraiSpeechFellowship/Releases/2.0/hindi/model_parameters/hindi.cd_cont_1000_8/mixture_weights
+-mixwfloor		0.0000001	1.000000e-07
+-mllr					
+-multiplex_multi	1		1
+-multiplex_single	1		1
+-Nlextree		3		3
+-Nstalextree		25		25
+-op_mode		4		4
+-outlatdir				
+-outlatfmt		0		0
+-outlatoldfmt		1		1
+-pbeam			1.0e-50		1.000000e-50
+-pheurtype		0		0
+-phonepen		1.0		1.000000e+00
+-pl_beam		1.0e-80		1.000000e-80
+-pl_window		1		1
+-ptranskip		0		0
+-senmgau		.cont.		.cont.
+-silprob		0.1		1.000000e-01
+-subvq					
+-subvqbeam		3.0e-3		3.000000e-03
+-svq4svq		0		0
+-tighten_factor		0.5		5.000000e-01
+-tmat					/home/sachin/myprojects/SaraiSpeechFellowship/Releases/2.0/hindi/model_parameters/hindi.cd_cont_1000_8/transition_matrices
+-tmatfloor		0.0001		1.000000e-04
+-topn			4		4
+-tracewhmm				
+-treeugprob		1		1
+-utt					
+-uw			0.7		7.000000e-01
+-var					/home/sachin/myprojects/SaraiSpeechFellowship/Releases/2.0/hindi/model_parameters/hindi.cd_cont_1000_8/variances
+-varfloor		0.0001		1.000000e-04
+-varnorm		no		no
+-vqeval			3		3
+-wbeam			1.0e-35		1.000000e-40
+-wend_beam		1.0e-80		1.000000e-80
+-wip			0.7		2.000000e-01
+-worddumpef		200000000	200000000
+-worddumpsf		200000000	200000000
+
+INFO: kbcore.c(421): Begin Initialization of Core Models:
+INFO: logs3.c(142): Initializing logbase: 1.000300e+00 (add table: 1)
+INFO:	Initialization of the log add table
+INFO:	Log-Add table size = 29350
+INFO:	
+INFO: feat.c(665): Initializing feature stream to type: '1s_c_d_dd', CMN='current', VARNORM='no', AGC='none'
+INFO: kbcore.c(449): .cont.
+INFO:	Initialization of feat_t, report:
+INFO:	Feature type        = 1s_c_d_dd
+INFO:	Cepstral size       = 13
+INFO:	Cepstral size Used  = 13
+INFO:	Number of stream    = 1
+INFO:	Vector size of stream[0]: 39
+INFO:	Whether CMN is used = 1
+INFO:	Whether AGC is used = 0
+INFO:	Whether variance is normalized = 0
+INFO:	
+INFO:	Reading HMM in Sphinx 3 Model format
+INFO:	Model Definition File: /home/sachin/myprojects/SaraiSpeechFellowship/Releases/2.0/hindi/model_architecture/hindi.1000.mdef
+INFO:	Mean File: /home/sachin/myprojects/SaraiSpeechFellowship/Releases/2.0/hindi/model_parameters/hindi.cd_cont_1000_8/means
+INFO:	Variance File: /home/sachin/myprojects/SaraiSpeechFellowship/Releases/2.0/hindi/model_parameters/hindi.cd_cont_1000_8/variances
+INFO:	Mixture Weight File: /home/sachin/myprojects/SaraiSpeechFellowship/Releases/2.0/hindi/model_parameters/hindi.cd_cont_1000_8/mixture_weights
+INFO:	Transition Matrices File: /home/sachin/myprojects/SaraiSpeechFellowship/Releases/2.0/hindi/model_parameters/hindi.cd_cont_1000_8/transition_matrices
+INFO: mdef.c(637): Reading model definition: /home/sachin/myprojects/SaraiSpeechFellowship/Releases/2.0/hindi/model_architecture/hindi.1000.mdef
+INFO:	Initialization of mdef_t, report:
+INFO:	59 CI-phone, 94476 CD-phone, 3 emitstate/phone, 177 CI-sen, 1177 Sen, 3604 Sen-Seq
+INFO:	
+INFO: kbcore.c(318): Using optimized GMM computation for Continuous HMM, -topn will be ignored
+INFO: cont_mgau.c(151): Reading mixture gaussian file '/home/sachin/myprojects/SaraiSpeechFellowship/Releases/2.0/hindi/model_parameters/hindi.cd_cont_1000_8/means'
+INFO: cont_mgau.c(317): 1177 mixture Gaussians, 8 components, 1 streams, veclen 39
+INFO: cont_mgau.c(151): Reading mixture gaussian file '/home/sachin/myprojects/SaraiSpeechFellowship/Releases/2.0/hindi/model_parameters/hindi.cd_cont_1000_8/variances'
+INFO: cont_mgau.c(317): 1177 mixture Gaussians, 8 components, 1 streams, veclen 39
+INFO: cont_mgau.c(403): Reading mixture weights file '/home/sachin/myprojects/SaraiSpeechFellowship/Releases/2.0/hindi/model_parameters/hindi.cd_cont_1000_8/mixture_weights'
+INFO: cont_mgau.c(533): Read 1177 x 8 mixture weights
+INFO: cont_mgau.c(557): Removing uninitialized Gaussian densities
+ 122 889
+WARNING: "cont_mgau.c", line 607: 85 densities removed (2 mixtures removed entirely)
+INFO: cont_mgau.c(621): Applying variance floor
+INFO: cont_mgau.c(639): 329 variance values floored
+INFO: cont_mgau.c(686): Precomputing Mahalanobis distance invariants
+INFO: tmat.c(162): Reading HMM transition probability matrices: /home/sachin/myprojects/SaraiSpeechFellowship/Releases/2.0/hindi/model_parameters/hindi.cd_cont_1000_8/transition_matrices
+INFO:	Initialization of tmat_t, report:
+INFO:	Read 59 transition matrices of size 3x4
+INFO:	
+INFO: dict.c(430): Reading main dictionary: /home/sachin/myprojects/SaraiSpeechFellowship/Releases/2.0/hindi/etc/hindi.dic
+INFO: dict.c(433): 6957 words read
+INFO: dict.c(438): Reading filler dictionary: /home/sachin/myprojects/SaraiSpeechFellowship/Releases/2.0/hindi/etc/hindi.filler
+INFO: dict.c(441): 3 words read
+INFO:	Initialization of dict_t, report:
+INFO:	No of word: 6960
+INFO:	
+INFO: lm.c(393): LM read('/home/sachin/myprojects/SaraiSpeechFellowship/Releases/2.0/hindi/etc/lm/hindi.DMP', lw= 10.00, wip= 0.20, uw= 0.70)
+INFO: lm.c(394): Reading LM file /home/sachin/myprojects/SaraiSpeechFellowship/Releases/2.0/hindi/etc/lm/hindi.DMP (LM name "default")
+INFO: lm_3g_dmp.c(359):     6959 ug
+INFO: lm_3g_dmp.c(403):    17863 bigrams [on disk]
+INFO: lm_3g_dmp.c(410):    21488 trigrams [on disk]
+INFO: lm_3g_dmp.c(435):      427 bigram prob entries
+INFO: lm_3g_dmp.c(453):      745 trigram bowt entries
+INFO: lm_3g_dmp.c(469):      144 trigram prob entries
+INFO: lm_3g_dmp.c(484):       35 trigram segtable entries (512 segsize)
+INFO: lm_3g_dmp.c(518):     6959 word strings
+INFO:	Initialization of fillpen_t, report:
+INFO:	Language weight =10.000000 
+INFO:	Word Insertion Penalty =0.200000 
+INFO:	Silence probability =0.100000 
+INFO:	Filler probability =0.100000 
+INFO:	
+INFO: dict2pid.c(525): Building PID tables for dictionary
+INFO:	Initialization of dict2pid_t, report:
+INFO:	Dict2pid is in composite triphone mode
+INFO:	1335 composite states; 716 composite sseq
+INFO:	
+INFO: kbcore.c(593): Inside kbcore: Verifying models consistency ...... 
+INFO: kbcore.c(613): End of Initialization of Core Models:
+INFO:	Initialization of beam_t, report:
+INFO:	Parameters used in Beam Pruning of Viterbi Search:
+INFO:	Beam=-614012
+INFO:	PBeam=-383758
+INFO:	WBeam=-307006 (Skip=0)
+INFO:	WEndBeam=-614012 
+INFO:	No of CI Phone assumed=59 
+INFO:	
+INFO:	Initialization of fast_gmm_t, report:
+INFO:	Parameters used in Fast GMM computation:
+INFO:	   Frame-level: Down Sampling Ratio 1, Conditional Down Sampling? 0, Distance-based Down Sampling? 0
+INFO:	     GMM-level: CI phone beam -614012. MAX CD 100000
+INFO:	Gaussian-level: GS map would be used for Gaussian Selection? =1, SVQ would be used as Gaussian Score? =0 SubVQ Beam -19363
+INFO:	
+INFO:	Initialization of pl_t, report:
+INFO:	Parameters used in phoneme lookahead:
+INFO:	Phoneme look-ahead        type = 0
+INFO:	Phoneme look-ahead beam   size = 65945
+INFO:	No of CI Phones assumed=59 
+INFO:	
+INFO:	Initialization of ascr_t, report:
+INFO:	No. of CI senone =177 
+INFO:	No. of senone = 1177
+INFO:	No. of composite senone = 1335
+INFO:	No. of senone sequence = 3604
+INFO:	No. of composite senone sequence=716 
+INFO:	Parameters used in phoneme lookahead:
+INFO:	Phoneme lookahead window = 1
+INFO:	
+INFO: vithist.c(163): Initializing Viterbi-history module
+INFO:	Initialization of vithist_t, report:
+INFO:	Word beam = -307006
+INFO:	Bigram Mode =0
+INFO:	Rescore Mode =1
+INFO:	Trace sil Mode =1
+INFO:	
+INFO: srch.c(407): Search Initialization. 
+WARNING: "srch_time_switch_tree.c", line 159: -Nstalextree is omitted in TST search.
+INFO: lextree.c(218): Creating Unigram Table for lm (name: default)
+INFO: lextree.c(231): Size of word table after unigram + words in class: 6957.
+INFO: lextree.c(239): Size of word table after adding alternative prons: 6957.
+INFO:	lextree_t, report:
+INFO:	Parameters of the lexical tree. 
+INFO:	Type of the tree 0 (0:unigram, 1: 2g, 2: 3g etc.)
+INFO:	Number of left contexts 41 
+INFO:	Number of node 31359 
+INFO:	Number of links in the tree 174981
+INFO:	The previous word for this tree  
+INFO:	The size of a node of the lexical tree 52 
+INFO:	The size of a gnode_t 12 
+INFO: srch_time_switch_tree.c(210): Lextrees (0) for lm 0, its name is default, it has 31359 nodes(ug)
+INFO: lextree.c(218): Creating Unigram Table for lm (name: default)
+INFO: lextree.c(231): Size of word table after unigram + words in class: 6957.
+INFO: lextree.c(239): Size of word table after adding alternative prons: 6957.
+INFO:	lextree_t, report:
+INFO:	Parameters of the lexical tree. 
+INFO:	Type of the tree 0 (0:unigram, 1: 2g, 2: 3g etc.)
+INFO:	Number of left contexts 41 
+INFO:	Number of node 31359 
+INFO:	Number of links in the tree 174981
+INFO:	The previous word for this tree  
+INFO:	The size of a node of the lexical tree 52 
+INFO:	The size of a gnode_t 12 
+INFO: srch_time_switch_tree.c(210): Lextrees (1) for lm 0, its name is default, it has 31359 nodes(ug)
+INFO: lextree.c(218): Creating Unigram Table for lm (name: default)
+INFO: lextree.c(231): Size of word table after unigram + words in class: 6957.
+INFO: lextree.c(239): Size of word table after adding alternative prons: 6957.
+INFO:	lextree_t, report:
+INFO:	Parameters of the lexical tree. 
+INFO:	Type of the tree 0 (0:unigram, 1: 2g, 2: 3g etc.)
+INFO:	Number of left contexts 41 
+INFO:	Number of node 31359 
+INFO:	Number of links in the tree 174981
+INFO:	The previous word for this tree  
+INFO:	The size of a node of the lexical tree 52 
+INFO:	The size of a gnode_t 12 
+INFO: srch_time_switch_tree.c(210): Lextrees (2) for lm 0, its name is default, it has 31359 nodes(ug)
+INFO: srch_time_switch_tree.c(215): Time for building trees, 0.0820 CPU 0.0829 Clk
+INFO: srch_time_switch_tree.c(236): Lextrees(0), 1 nodes(filler)
+INFO: srch_time_switch_tree.c(236): Lextrees(1), 1 nodes(filler)
+INFO: srch_time_switch_tree.c(236): Lextrees(2), 1 nodes(filler)
+INFO:	Initialization of srch_t, report:
+INFO:	Operation Mode = 4, Operation Name = OP_TST_DECODE
+INFO:	
+INFO: utt.c(133): Processing: test
+INFO: feat.c(858): At directory /home/sachin/myprojects/SaraiSpeechFellowship/Releases/2.0/hindi/feat
+INFO: feat.c(299): Reading mfc file: '/home/sachin/myprojects/SaraiSpeechFellowship/Releases/2.0/hindi/feat/test.mfc'[0..2147418112]
+
+......................................
+Backtrace(test)
+FV:test>                 WORD  SFrm  EFrm AScr(UnNorm)    LMScore  AScr+LScr     AScale
+fv:test>                <sil>     0    51      3653237     -82114    3571123    3933738 
+fv:test>                 mara    52    74       -49915    -315224    -365139     289878 
+fv:test>             jaanataa    75   108      -375589    -344364    -719953     158276 
+fv:test>                  hoo   109   128        57732    -187744    -130012     319133 
+fv:test>                  kei   129   140      -455321    -154644    -609965    -289809 
+fv:test>               mujhei   141   172      -432057    -278444    -710501     108966 
+fv:test>                 kyaa   173   199        75304    -252454    -177150     630380 
+fv:test>              karanaa   200   235       300262    -252254      48008     650741 
+fv:test>                  hai   236   260       314018    -141234     172784     648563 
+fv:test>                <sil>   261   344      5267947     -82114    5185833    5770628 
+fv:test>                <sil>   345   373      1514914     -82114    1432800    1748366 
+FV:test>                TOTAL                  9870532   -2172704
+
+FWDVIT: mara jaanataa hoo kei mujhei kyaa karanaa hai (test)
+FWDXCT: test S 14294862 T -4086865 A -4098328 L 11463 0 3653237 -7675 <sil> 52 -49915 -30986 mara 75 -375589 -33900 jaanataa 109 57732 -18238 hoo 129 -455321 -14928 kei 141 -432057 -27308 mujhei 173 75304 -24709 kyaa 200 300262 -24689 karanaa 236 314018 -13587 hai 261 5267947 -7675 <sil> 345 1514914 -7675 <sil> 374 0 -1299 </s> 374
+
+INFO: stat.c(146):  374 frm;   785 cdsen/fr,  177 cisen/fr,  6273 cdgau/fr,  1375 cigau/fr, Sen 0.22, CPU 0.22 Clk [Ovrhd 0.04 CPU 0.03 Clk];   3266 hmm/fr,  27 wd/fr, Search: 0.15 CPU 0.16 Clk (test)  
+INFO: fast_algo_struct.c(371): HMMHist[0..2](test): 306(81) 59(97) 9(100)
+sachin    9858  0.0  0.2  6576 2372 pts/4    S    10:54   0:00 /usr/bin/perl ./scripts_pl/decode/slave.pl
+sachin    9859  0.0  0.2  7628 2524 pts/4    S    10:54   0:00 perl /home/sachin/myprojects/SaraiSpeechFellowship/Releases/2.0/hindi/scripts_pl/decode/s3decode.pl 1 1
+sachin    9860  0.0  0.0  5588 1020 pts/4    S    10:54   0:00 sh -c "/home/sachin/speech/sphinx3-0.6/src/programs/decode" -mdef "/home/sachin/myprojects/SaraiSpeechFellowship/Releases/2.0/hindi/model_architecture/hindi.1000.mdef" -senmgau .cont. -mean "/home/sachin/myprojects/SaraiSpeechFellowship/Releases/2.0/hindi/model_parameters/hindi.cd_cont_1000_8/means" -var "/home/sachin/myprojects/SaraiSpeechFellowship/Releases/2.0/hindi/model_parameters/hindi.cd_cont_1000_8/variances" -mixw "/home/sachin/myprojects/SaraiSpeechFellowship/Releases/2.0/hindi/model_parameters/hindi.cd_cont_1000_8/mixture_weights" -tmat "/home/sachin/myprojects/SaraiSpeechFellowship/Releases/2.0/hindi/model_parameters/hindi.cd_cont_1000_8/transition_matrices" -lw 10  -feat 1s_c_d_dd -beam 1e-80 -wbeam 1e-40 -dict "/home/sachin/myprojects/SaraiSpeechFellowship/Releases/2.0/hindi/etc/hindi.dic" -fdict "/home/sachin/myprojects/SaraiSpeechFellowship/Releases/2.0/hindi/etc/hindi.filler" -lm "/home/sachin/myprojects/SaraiSpeechFellowship/Releases/2.0/hindi/etc/lm/hindi.DMP" -wip 0.2 -ctl "/home/sachin/myprojects/SaraiSpeechFellowship/Releases/2.0/hindi/etc/hindi_test.fileids" -ctloffset 0 -ctlcount 1 -cepdir "/home/sachin/myprojects/SaraiSpeechFellowship/Releases/2.0/hindi/feat" -cepext .mfc -hyp /home/sachin/myprojects/SaraiSpeechFellowship/Releases/2.0/hindi/result/hindi-1-1.match -agc none -varnorm no  -cmn current 2>&1
+INFO: lm.c(590):    509465 tg(),    452730 tgcache,    56734 bo;   932 fills,      170 in mem (0.8%)
+INFO: lm.c(593):    58087 bg(),    55977 bo;   217 fills,     5380 in mem (30.1%)
+INFO: corpus.c(598): test:    1.4 sec CPU,    2.9 sec Clk;  TOT:      1.4 sec CPU,      2.9 sec Clk
+
+INFO: stat.c(193): SUMMARY:  374 fr;  784 cdsen/fr, 177 cisen/fr, 6272 cdgau/fr, 1375 cigau/fr, 0.22 xCPU 0.22 xClk [Ovhrd 0.04 xCPU  0 xClk];  3266 hmm/fr, 27 wd/fr, 0.15 xCPU 0.16 xClk;  tot: 0.38 xCPU, 0.79 xClk
+sachin    9884  0.0  0.0  4824  872 pts/4    S    10:55   0:00 sh -c ps aguxwww | grep decode_anytopo
+sachin    9886  0.0  0.0  4216  584 pts/4    S    10:55   0:00 grep decode_anytopo
+
+Thu Aug 28 10:54:49 2008

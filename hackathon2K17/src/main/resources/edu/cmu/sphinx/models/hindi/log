@@ -1,0 +1,57 @@
+INFO: info.c(63): Host: 'speech36'
+INFO: info.c(64): Directory: '/home/sachin/myprojects/SaraiSpeechFellowship/Releases/2.0/hindi'
+INFO: info.c(68): /home/sachin/speech/sphinx3-0.6/src/programs/.libs/lt-wave2feat Compiled on: Oct  8 2007, AT: 21:05:01
+
+INFO: cmd_ln.c(399): Parsing command line:
+/home/sachin/speech/sphinx3-0.6/src/programs/.libs/lt-wave2feat \
+	-verbose 1 \
+	-di wav \
+	-ei wav \
+	-mswav 1 \
+	-do feat \
+	-eo mfc \
+	-c etc/hindi_test.fileids 
+
+Current configuration:
+[NAME]		[DEFLT]		[VALUE]
+-alpha		0.97		9.700000e-01
+-blocksize	200000		200000
+-c				etc/hindi_test.fileids
+-di				wav
+-dither		0		0
+-do				feat
+-doublebw	0		0
+-ei				wav
+-eo				mfc
+-fbtype		mel_scale	mel_scale
+-feat		sphinx		sphinx
+-frate		100		100
+-i				
+-input_endian	little		little
+-logfn				
+-logspec	0		0
+-lowerf		133.33334	1.333333e+02
+-machine_endian	little		little
+-maxcepvecs	256		256
+-mswav		0		1
+-ncep		13		13
+-nchans		1		1
+-nfft		512		512
+-nfilt		40		40
+-nist		0		0
+-o				
+-raw		0		0
+-samprate	16000.0		1.600000e+04
+-seed		-1		-1
+-upperf		6855.4976	6.855498e+03
+-verbose	0		1
+-whichchan	1		1
+-wlen		0.025625	2.562500e-02
+
+INFO: fe.c(160): wav/test.wav
+INFO: fe.c(750): Reading MS Wav file wav/test.wav:
+INFO: fe.c(751): 	16 bit PCM data, 1 channels 60000 samples
+INFO: fe.c(752): 	Sampled at 16000
+INFO: fe.c(792): Saving data to feat/test.mfc
+INFO: fe.c(942): Saved 4849 floats
+INFO: fe.c(942): Saved 13 floats

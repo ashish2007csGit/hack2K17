@@ -81,11 +81,21 @@ public class SRTGenerateTaskRunner implements Runnable {
 			Configuration configuration = new Configuration();
 			String videoFileName = AppConstants.UPLOADED_FOLDER_SUBTITLE + file.getName();
 
-			configuration.setAcousticModelPath("resource:/edu/cmu/sphinx/models/en-us/en-us");
+			//english
+			/*configuration.setAcousticModelPath("resource:/edu/cmu/sphinx/models/en-us/en-us");
 			configuration.setDictionaryPath("resource:/edu/cmu/sphinx/models/en-us/cmudict-en-us.dict");
-			configuration.setLanguageModelPath("resource:/edu/cmu/sphinx/models/en-us/en-us.lm.bin");
-			// configuration.setSampleRate(8000);
+			configuration.setLanguageModelPath("resource:/edu/cmu/sphinx/models/en-us/en-us.lm.bin");*/
 
+			//hindi
+			/*configuration.setAcousticModelPath("resource:/edu/cmu/sphinx/models/hindi/hindi.cd_cont_1000");
+			configuration.setDictionaryPath("resource:/edu/cmu/sphinx/models/hindi/etc/hindi.dic");
+			configuration.setLanguageModelPath("resource:/edu/cmu/sphinx/models/hindi/etc/lm/hindi.dmp");*/
+			
+			//french
+			configuration.setAcousticModelPath("resource:/edu/cmu/sphinx/models/french/cmusphinx-fr-ptm-5.2");
+			configuration.setDictionaryPath("resource:/edu/cmu/sphinx/models/french/fr.dict");
+			configuration.setLanguageModelPath("resource:/edu/cmu/sphinx/models/french/fr-small.lm.bin");
+			
 			StreamSpeechRecognizer recognizer;
 			try {
 				recognizer = new StreamSpeechRecognizer(configuration);
