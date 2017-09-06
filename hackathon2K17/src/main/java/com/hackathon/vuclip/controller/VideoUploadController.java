@@ -16,15 +16,7 @@ import com.hackathon.vuclip.util.SubtitleGeneraterTaskRunner;
 @Controller
 public class VideoUploadController {
 	
-	String [] languages;
-
-	public String[] getLanguages() {
-		return languages;
-	}
-
-	public void setLanguages(String[] languages) {
-		this.languages = languages;
-	}
+	
 
 	@GetMapping("/upload")
 	public String index() {
@@ -32,7 +24,7 @@ public class VideoUploadController {
 	}
 
 	@PostMapping("/uploadVideo")
-	public String singleFileUpload(@RequestParam("file") MultipartFile file, @RequestParam("checkboxName") String [] languages, RedirectAttributes redirectAttributes) {
+	public String singleFileUpload(@RequestParam("file") MultipartFile file, @RequestParam("checkboxName") String [] languages, RedirectAttributes redirectAttributes) throws InterruptedException {
 		
 
 		if (file.isEmpty()) {
@@ -45,6 +37,9 @@ public class VideoUploadController {
 	   
 		 
 		for (int i = 0; i < languages.length; i++) {
+			System.out.println("language from UI is  "+languages[i]);
+			Thread.sleep(5000);
+			
 			switch (languages[i]) {
 			case AppConstants.EN:
 				taskRunner(file, languages, context, taskExecutor, i);
