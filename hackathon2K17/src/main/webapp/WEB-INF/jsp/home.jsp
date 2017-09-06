@@ -5,12 +5,10 @@
 <meta charset="utf-8">
 <title>Video Player</title>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<link rel="stylesheet"
-	href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
-<link rel="stylesheet"
-	href="https://fonts.googleapis.com/icon?family=Material+Icons">
-<link rel="stylesheet"
-	href="https://code.getmdl.io/1.3.0/material.deep_purple-pink.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
 <link rel="stylesheet" href="css/styles.css">
 <style>
 #view-source {
@@ -26,6 +24,7 @@
 .hide {
 	display: none;
 }
+
 </style>
 
 <script type="text/javascript">
@@ -60,14 +59,17 @@
 			<div class="mdl-layout--large-screen-only mdl-layout__header-row">
 			</div>
 			<div class="mdl-layout--large-screen-only mdl-layout__header-row">
-				<h3>Video Library</h3>
+				<img src="images/footer-logo.png" alt="vuclip Smart Alert" />
+				<h4 style="margin-left: 20%;">Video Library</h4>
 			</div>
 			<div class="mdl-layout--large-screen-only mdl-layout__header-row">
 			</div>
 		</header>
 
 		<div class="mdl-layout__drawer">
-			<span class="mdl-layout-title">Menu</span>
+			<div class="avatar">
+				<span class="mdl-layout-title"><img src="images/footer-logo.png" alt="vuclip Smart Alert" /></span>
+			</div>
 			<nav class="mdl-navigation">
 				<a class="mdl-navigation__link" href="/upload">Upload</a> <a
 					class="mdl-navigation__link" href="/home">Video library</a>
@@ -79,17 +81,16 @@
 
 		<div id="menu" class="page-content">
 			<div class="mdl-grid">
-				<div class="mdl-layout-spacer"></div>
-				<div class="mdl-cell mdl-cell--8-col">
+				<div class="mdl-cell mdl-cell--3-col"></div>
+				<div class="mdl-cell mdl-cell--7-col">
 
 					<!-- <form action="/play" method="post"> -->
-					<table
-						class="mdl-data-table fullwidth mdl-js-data-table mdl-shadow--2dp">
+					<table style="width:60%" class="mdl-data-table fullwidth mdl-js-data-table mdl-shadow--2dp">
 						<thead>
 							<tr>
-								<th>Sr. No.</th>
-								<th>Video</th>
-								<th>Play</th>
+								<th style="width:20%">Sr. No.</th>
+								<th style="text-align:center; width:60%">Video</th>
+								<th style="width:20%">Play</th>
 							</tr>
 						</thead>
 						<tbody>
@@ -100,7 +101,7 @@
 
 								<tr>
 									<td><%=i%></td>
-									<td>${videoName}</td>
+									<td style="text-align:center">${videoName}</td>
 									<td><button onclick="submitClick(<%=i%>)"
 											class="mdl-button mdl-button--fab mdl-js-button mdl-js-ripple-effect">
 											<i class="material-icons">video_library</i>
@@ -115,6 +116,7 @@
 						</tbody>
 					</table>
 				</div>
+				<div class="mdl-cell mdl-cell--2-col"></div>
 			</div>
 		</div>
 

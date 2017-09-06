@@ -33,7 +33,7 @@ public class VideoUploadController {
 		return "upload";
 	}
 
-	@PostMapping("/uploadVideo") // //new annotation since 4.3
+	@PostMapping("/uploadVideo")
 	public String singleFileUpload(@RequestParam("file") MultipartFile file, RedirectAttributes redirectAttributes) {
 		
 
@@ -51,10 +51,6 @@ public class VideoUploadController {
 		 try {
 			Path path = Paths.get(AppConstants.UPLOADED_FOLDER + file.getOriginalFilename());
 			Files.write(path, file.getBytes());
-			//byte[] bytes = file.getBytes();
-			//uploadFileTask.setFileName(file);
-			//uploadFileTask.setFileBytes(bytes);
-			// taskExecutor.execute(uploadFileTask);
 			 
 			 SRTGenerateTaskRunner srtGenerateTask = (SRTGenerateTaskRunner) context.getBean("sRTGenerateTaskRunner");
 			 srtGenerateTask.setName("srtGenerateTask");
@@ -63,20 +59,19 @@ public class VideoUploadController {
 			 
 			 System.out.println("out side of task");
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		 
-
-/*	// Get the file and save it somewhere
-		byte[] bytes = file.getBytes();
-		Path path = Paths.get(UPLOADED_FOLDER + file.getOriginalFilename());
-		Files.write(path, bytes);*/
-
 		redirectAttributes.addFlashAttribute("message",
 				"You successfully uploaded '" + file.getOriginalFilename() + "'");
 
-		return "redirect:/uploadStatus";
+		try {
+			Thread.sleep(4000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		
+		return "redirect:/home";
 	}
 
 	@GetMapping("/uploadStatus")
