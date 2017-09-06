@@ -1,32 +1,42 @@
 package com.hackathon.vuclip.controller;
 
-import org.apache.catalina.core.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
-import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor;
 
 import com.hackathon.vuclip.constants.AppConstants;
+import com.hackathon.vuclip.model.LanguageOptions;
 import com.hackathon.vuclip.util.AppConfig;
-import com.hackathon.vuclip.util.SRTGenerateTaskRunner;
-import com.hackathon.vuclip.util.UploadFileTaskRunenr;
-
-import java.io.File;
-import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-import java.util.Map;
+import com.hackathon.vuclip.util.SubtitleGeneraterTaskRunner;
 
 @Controller
 public class VideoUploadController {
 	
+	String [] languages;
+
+	public String[] getLanguages() {
+		return languages;
+	}
+
+	public void setLanguages(String[] languages) {
+		this.languages = languages;
+	}
+	
+	LanguageOptions languageOptions;
+	
+
+	public LanguageOptions getLanguageOptions() {
+		return languageOptions;
+	}
+
+	public void setLanguageOptions(LanguageOptions languageOptions) {
+		this.languageOptions = languageOptions;
+	}
 
 	@GetMapping("/upload")
 	public String index() {
@@ -34,15 +44,48 @@ public class VideoUploadController {
 	}
 
 	@PostMapping("/uploadVideo")
-	public String singleFileUpload(@RequestParam("file") MultipartFile file, RedirectAttributes redirectAttributes) {
+	public String singleFileUpload(@RequestParam("file") MultipartFile file, @RequestParam("checkboxName") String [] languages, RedirectAttributes redirectAttributes) {
 		
 
 		if (file.isEmpty()) {
 			redirectAttributes.addFlashAttribute("message", "Please select a file to upload");
 			return "redirect:uploadStatus";
 		}
-		// Files.copy(file.getInputStream(), this.rootLocation.resolve(file.getOriginalFilename()));
+	   
+	 AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
+	   ThreadPoolTaskExecutor taskExecutor = (ThreadPoolTaskExecutor) context.getBean("taskExecutor");
+	   
+		 
+		for (int i = 0; i < languages.length; i++) {
+			switch (languages[i]) {
+			case AppConstants.EN:
+				taskRunner(file, languages, context, taskExecutor, i);
+				break;
+			case AppConstants.HI:
+				taskRunner(file, languages, context, taskExecutor, i);
+				break;
+			case AppConstants.FR:
+				taskRunner(file, languages, context, taskExecutor, i);
+				break;
+			case AppConstants.GE:
+				taskRunner(file, languages, context, taskExecutor, i);
+				break;
+			case AppConstants.RU:
+				taskRunner(file, languages, context, taskExecutor, i);
+				break;
+
+			default:
+				break;
+			}
+		}
 		
+		/*System.out.println("cb_hindi "+cb_hindi);
+		System.out.println("cb_french "+cb_french);
+		System.out.println("cb_german "+cb_german);
+		System.out.println("cb_russian "+cb_russian);
+		*/
+		// Files.copy(file.getInputStream(), this.rootLocation.resolve(file.getOriginalFilename()));
+		/*
 		 AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
 		 ThreadPoolTaskExecutor taskExecutor = (ThreadPoolTaskExecutor) context.getBean("taskExecutor");
 		 UploadFileTaskRunenr uploadFileTask =  (UploadFileTaskRunenr) context.getBean("uploadFileTaskRunenr");
@@ -69,9 +112,18 @@ public class VideoUploadController {
 			Thread.sleep(4000);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
-		}
+		}*/
 		
 		return "redirect:/home";
+	}
+
+	private void taskRunner(MultipartFile file, String[] languages, AnnotationConfigApplicationContext context,
+			ThreadPoolTaskExecutor taskExecutor, int i) {
+		SubtitleGeneraterTaskRunner englishSubtitleGeneraterTaskBean = (SubtitleGeneraterTaskRunner) context.getBean("subtitleGeneraterTask");
+		englishSubtitleGeneraterTaskBean.setName("subtitleGenerateTask for "+languages[i]);
+		englishSubtitleGeneraterTaskBean.setFile(file);
+		englishSubtitleGeneraterTaskBean.setLanguage(languages[i]);
+		taskExecutor.execute(englishSubtitleGeneraterTaskBean);
 	}
 
 	@GetMapping("/uploadStatus")

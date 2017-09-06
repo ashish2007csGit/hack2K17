@@ -30,14 +30,24 @@ import it.sauronsoftware.jave.EncodingAttributes;
 
 @Component
 @Scope("prototype")
-public class SRTGenerateTaskRunner implements Runnable {
+public class SubtitleGeneraterTaskRunner implements Runnable {
 
-	@Bean(name = "sRTGenerateTaskRunner")
-	public SRTGenerateTaskRunner helloWorld() {
-		return new SRTGenerateTaskRunner();
+	@Bean(name = "subtitleGeneraterTask")
+	public SubtitleGeneraterTaskRunner helloWorld() {
+		return new SubtitleGeneraterTaskRunner();
 	}
 
 	MultipartFile file;
+	
+	String language;
+
+	public String getLanguage() {
+		return language;
+	}
+
+	public void setLanguage(String language) {
+		this.language = language;
+	}
 
 	public MultipartFile getFile() {
 		return file;
@@ -92,9 +102,30 @@ public class SRTGenerateTaskRunner implements Runnable {
 			configuration.setLanguageModelPath("resource:/edu/cmu/sphinx/models/hindi/etc/lm/hindi.dmp");*/
 			
 			//french
-			configuration.setAcousticModelPath("resource:/edu/cmu/sphinx/models/french/cmusphinx-fr-ptm-5.2");
+			/*configuration.setAcousticModelPath("resource:/edu/cmu/sphinx/models/french/cmusphinx-fr-ptm-5.2");
 			configuration.setDictionaryPath("resource:/edu/cmu/sphinx/models/french/fr.dict");
-			configuration.setLanguageModelPath("resource:/edu/cmu/sphinx/models/french/fr-small.lm.bin");
+			configuration.setLanguageModelPath("resource:/edu/cmu/sphinx/models/french/fr-small.lm.bin");*/
+			
+			switch (getLanguage()) {
+			case AppConstants.EN:
+				setConfigurartionLanguage(configuration, AppConstants.PATH_ACCCOUSTIC_EN, AppConstants.PATH_DICT_EN, AppConstants.PATH_LANGUAGE_MODEL_EN);
+				break;
+			case AppConstants.HI:
+				setConfigurartionLanguage(configuration, AppConstants.PATH_ACCOUSITC_HI, AppConstants.PATH_DICT_HI, AppConstants.PATH_LANGUAGE_MODEL_HI);
+				break;
+			case AppConstants.FR:
+				setConfigurartionLanguage(configuration, AppConstants.PATH_ACCOUSITC_FR, AppConstants.PATH_DICT_FR, AppConstants.PATH_LANGUAGE_MODEL_FR);
+				break;
+			case AppConstants.GE:
+				setConfigurartionLanguage(configuration, AppConstants.PATH_ACCOUSITC_GE, AppConstants.PATH_DICT_GE, AppConstants.PATH_LANGUAGE_MODEL_GE);
+				break;
+			case AppConstants.RU:
+				setConfigurartionLanguage(configuration, AppConstants.PATH_ACCOUSITC_RU, AppConstants.PATH_DICT_RU, AppConstants.PATH_LANGUAGE_MODEL_RU);
+				break;
+
+			default:
+				break;
+			}
 			
 			StreamSpeechRecognizer recognizer;
 			try {
@@ -105,7 +136,7 @@ public class SRTGenerateTaskRunner implements Runnable {
 				SpeechResult result;
 
 				int line_number = 1;
-				PrintWriter writer = new PrintWriter(videoFileName.substring(0, videoFileName.length() - 4) + ".vtt",
+				PrintWriter writer = new PrintWriter(videoFileName.substring(0, videoFileName.length() - 4) +"_"+getLanguage()+ ".vtt",
 						"UTF-8");
 				writer.println("WEBVTT");
 				writer.println();
@@ -141,6 +172,12 @@ public class SRTGenerateTaskRunner implements Runnable {
 
 		System.out.println(name + " is stopped");
 
+	}
+
+	private void setConfigurartionLanguage(Configuration configuration, String pathAcccousticEn, String pathDictEn, String pathLanguageModelEn) {
+		configuration.setAcousticModelPath(pathAcccousticEn);
+		configuration.setDictionaryPath(pathDictEn);
+		configuration.setLanguageModelPath(pathLanguageModelEn);
 	}
 
 	public File extractAudioFromVideo(File file2) {

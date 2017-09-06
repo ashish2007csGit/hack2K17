@@ -70,23 +70,35 @@
 					</div>
 
 					<div style="margin-top: 16px">
-						<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox1">
-							<input type="checkbox" id="checkbox1" name="checkboxName1" class="mdl-checkbox__input">
+						<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="cb_english">
+							<input type="checkbox" id="cb_english"  name="checkboxName" value="EN" class="mdl-checkbox__input">
 							<span class="mdl-checkbox__label">Generate english subtitles</span>
 						</label>
 					</div>
 					
 					<div style="margin-top: 16px">
-						<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox2">
-							<input type="checkbox" id="checkbox2" name="checkboxName2" class="mdl-checkbox__input">
+						<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="cb_hindi">
+							<input type="checkbox" id="cb_hindi" name="checkboxName" value="HI" class="mdl-checkbox__input">
 							<span class="mdl-checkbox__label">Generate hindi subtitles</span>
 						</label>
 					</div>
 					
 					<div style="margin-top: 16px">
-						<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox3">
-							<input type="checkbox" id="checkbox3" name="checkboxName3" class="mdl-checkbox__input">
+						<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="cb_french">
+							<input type="checkbox" id="cb_french" name="checkboxName" value="FR" class="mdl-checkbox__input">
 							<span class="mdl-checkbox__label">Generate french subtitles</span>
+						</label>
+					</div>
+					<div style="margin-top: 16px">
+						<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="cb_german">
+							<input type="checkbox" id="cb_german" name="checkboxName" value="GE" class="mdl-checkbox__input">
+							<span class="mdl-checkbox__label">Generate german subtitles</span>
+						</label>
+					</div>
+					<div style="margin-top: 16px">
+						<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="cb_russian">
+							<input type="checkbox" id="cb_russian" name="checkboxName" value="RU" class="mdl-checkbox__input">
+							<span class="mdl-checkbox__label">Generate russian subtitles</span>
 						</label>
 					</div>
 					
