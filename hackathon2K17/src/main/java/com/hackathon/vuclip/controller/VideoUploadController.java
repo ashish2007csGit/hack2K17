@@ -31,9 +31,9 @@ public class VideoUploadController {
 			redirectAttributes.addFlashAttribute("message", "Please select a file to upload");
 			return "redirect:uploadStatus";
 		}
-	   
-	 AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
-	   ThreadPoolTaskExecutor taskExecutor = (ThreadPoolTaskExecutor) context.getBean("taskExecutor");
+		
+		AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
+		ThreadPoolTaskExecutor taskExecutor = (ThreadPoolTaskExecutor) context.getBean("taskExecutor");
 	   
 		 
 		for (int i = 0; i < languages.length; i++) {
@@ -53,7 +53,7 @@ public class VideoUploadController {
 			case AppConstants.GE:
 				taskRunner(file, languages, context, taskExecutor, i);
 				break;
-			case AppConstants.RU:
+			case AppConstants.IT:
 				taskRunner(file, languages, context, taskExecutor, i);
 				break;
 
@@ -66,7 +66,7 @@ public class VideoUploadController {
 		System.out.println("cb_french "+cb_french);
 		System.out.println("cb_german "+cb_german);
 		System.out.println("cb_russian "+cb_russian);
-		*/
+		/*
 		// Files.copy(file.getInputStream(), this.rootLocation.resolve(file.getOriginalFilename()));
 		/*
 		 AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
@@ -89,13 +89,13 @@ public class VideoUploadController {
 		}
 		 
 		redirectAttributes.addFlashAttribute("message",
-				"You successfully uploaded '" + file.getOriginalFilename() + "'");
+				"You successfully uploaded '" + file.getOriginalFilename() + "'");*/
 
 		try {
 			Thread.sleep(4000);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
-		}*/
+		}
 		
 		return "redirect:/home";
 	}
