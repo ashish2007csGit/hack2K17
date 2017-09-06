@@ -1,6 +1,9 @@
 package com.hackathon.vuclip.controller;
 
 import java.io.File;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -15,6 +18,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import com.google.gson.Gson;
 import com.hackathon.vuclip.constants.AppConstants;
 
 @Controller
@@ -57,14 +61,44 @@ public class WelcomeController {
 		return "upload";
 	}
 	
-	@RequestMapping(value = "/play", method = RequestMethod.GET)
+	@RequestMapping(value = "/play", method = RequestMethod.GET, produces = "application/json")
 	public @ResponseBody String play(@RequestParam(name = "id") Integer id) {
 		System.out.println("To player");
 		System.out.println(id);
 		
+
+		List<String> resultList = new ArrayList<>();
 		String videoFileName = getVideoFile(id);
+		resultList.add(videoFileName);
 		
-		return videoFileName;
+		if(Files.exists(Paths.get(AppConstants.UPLOADED_FOLDER_SUBTITLE + videoFileName + "_EN.vtt"))) {
+			resultList.add(videoFileName + "_EN");
+		} else {
+			resultList.add("NOTEXISTING");
+		}
+		if(Files.exists(Paths.get(AppConstants.UPLOADED_FOLDER_SUBTITLE + videoFileName + "_HI.vtt"))) {
+			resultList.add(videoFileName + "_HI");
+		} else {
+			resultList.add("NOTEXISTING");
+		}
+		if(Files.exists(Paths.get(AppConstants.UPLOADED_FOLDER_SUBTITLE + videoFileName + "_FR.vtt"))) {
+			resultList.add(videoFileName + "_FR");
+		} else {
+			resultList.add("NOTEXISTING");
+		}
+		if(Files.exists(Paths.get(AppConstants.UPLOADED_FOLDER_SUBTITLE + videoFileName + "_GE.vtt"))) {
+			resultList.add(videoFileName + "_GE");
+		} else {
+			resultList.add("NOTEXISTING");
+		}
+		if(Files.exists(Paths.get(AppConstants.UPLOADED_FOLDER_SUBTITLE + videoFileName + "_IT.vtt"))) {
+			resultList.add(videoFileName + "_IT");
+		} else {
+			resultList.add("NOTEXISTING");
+		}
+		return new Gson().toJson(resultList);
+		
+		//return videoFileName;
 	}
 	
 	@RequestMapping("/player")

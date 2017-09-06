@@ -38,16 +38,96 @@
 		$.ajax({
 						url : '/play?id=' + id,
 						type: 'get',
+						dataType: "json",
 						success: function(result) {
-								console.log(result);
+							var index = result.length - 1;
+							console.log('Index is: ' + index);
+							
+							 	/* $("#menu").addClass("hide");
+								$("#player").removeClass("hide"); */
+								var video = document.getElementById('video');
+								var videoSrc = 'video\\' + result[0];
+								   video.src = videoSrc + '.mp4';
+								
+								var subButtons = [];
+								//var list = $(".subtitles-menu");
+								   
+								for(i=1;i<=index;i++){   
+									/* var trackSrc = 'subtitles\\vtt\\' + result
+								   	track.src = trackSrc + '.vtt'; */
+								   	if(result[i].indexOf("EN") != -1){
+								   		console.log('English loaded');
+								   		//subButtons.push(i.toString());
+										track = document.createElement("track");
+										track.label = "English";
+										track.kind = "subtitles";
+									   	track.srclang = "en";
+									   	track.src = "subtitles\\vtt\\" + result[i] + ".vtt";
+									   	video.appendChild(track);
+								   	} else if(result[i].indexOf("HI") != -1){
+								   		console.log('Hindi loaded');
+								   		//subButtons.push(i.toString());
+								   		var list = $(".subtitles-menu");
+								   		track = document.createElement("track");
+									   	track.kind = "subtitles";
+									   	track.label = "Hindi";
+									   	track.srclang = "hn";
+									   	track.src = "subtitles\\vtt\\" + result[i] + ".vtt";
+									   	video.appendChild(track);
+								   	} else if(result[i].indexOf("FR") != -1){
+								   		console.log('French loaded');
+								   		//subButtons.push(i.toString());
+										track = document.createElement("track");
+									   	track.kind = "subtitles";
+									   	track.label = "French";
+									   	track.srclang = "fr";
+									   	track.src = "subtitles\\vtt\\" + result[i] + ".vtt";
+									   	video.appendChild(track);
+								   	} else if(result[i].indexOf("DE") != -1){
+								   		console.log('German loaded');
+								   		//subButtons.push(i.toString());
+										track = document.createElement("track");
+									   	track.kind = "subtitles";
+									   	track.label = "Ferman";
+									   	track.srclang = "de";
+									   	track.src = "subtitles\\vtt\\" + result[i] + ".vtt";
+									   	video.appendChild(track);
+								   	} else if(result[i].indexOf("IT") != -1){
+								   		console.log('Italian loaded');
+								   		//subButtons.push(i.toString());
+										track = document.createElement("track");
+									   	track.kind = "subtitles";
+									   	track.label = "Italian";
+									   	track.srclang = "it";
+									   	track.src = "subtitles\\vtt\\" + result[i] + ".vtt";
+									   	video.appendChild(track);
+								   	} else{
+								   		console.log('Else condi');
+								   		//console.log(list.children().eq(i));
+								   		//list.children().eq(i).remove();
+								   		subButtons.push(i.toString());
+								   	}
+								   	
+								}
+								   //video.play();
+								 var list = $(".subtitles-menu");
+								 var len = list.length;
+								 for(i=0;i<len;i++){
+									 
+								 }
+								 var length = subButtons.length;
+								 for(i=0;i<length;i++){
+									 list.children().eq(subButtons[i]).remove();
+									 var newArr = [];
+									 for(i=0;i<subButtons.length;i++){
+										 newArr.push(subButtons[i+1] -1);
+									 }
+									 subButtons = newArr;
+								 }
+								 
+								console.log(subButtons);
 								$("#menu").addClass("hide");
 								$("#player").removeClass("hide");
-								var video = document.getElementById('video');
-								var videoSrc = 'video\\' + result;
-								   video.src = videoSrc + '.mp4';
-								var trackSrc = 'subtitles\\vtt\\' + result
-								   track.src = trackSrc + '.vtt';
-								   //video.play();
 					    }
 
 					});
@@ -124,9 +204,12 @@
 		<div id="player" class="hide">
 			<figure style="height:400px;width: 600px;" id="videoContainer" data-fullscreen="false">
 				<video id="video" controls preload="metadata">
-					<source src="" type="video/mp4">
-					<track id="track" label="English" kind="subtitles" srclang="en"
-						src="" default>
+					<!-- <source src="" type="video/mp4"> -->
+					<track label="English" kind="subtitles" srclang="en" id="enTrack" src="">
+					<track label="Hindi" kind="subtitles" srclang="hn" id="hnTrack" src="">
+					<track label="French" kind="subtitles" srclang="fr" id="frTrack" src="">
+					<track label="German" kind="subtitles" srclang="de" id="deTrack" src="">
+					<track label="Italian" kind="subtitles" srclang="it" id="itTrack" src="">
 				</video>
 
 

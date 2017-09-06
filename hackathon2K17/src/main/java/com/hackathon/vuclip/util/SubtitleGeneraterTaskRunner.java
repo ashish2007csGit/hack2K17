@@ -2,13 +2,9 @@ package com.hackathon.vuclip.util;
 
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.PrintWriter;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.List;
 
 import org.apache.commons.lang3.time.DurationFormatUtils;
@@ -83,7 +79,6 @@ public class SubtitleGeneraterTaskRunner implements Runnable {
 		System.out.println(name + " is running");
 
 		try {
-			Thread.sleep(5000);
 			String originalFilename = file.getOriginalFilename();
 			File file = new File(AppConstants.UPLOADED_FOLDER +originalFilename );
 			//File convertedFile = 
@@ -119,8 +114,8 @@ public class SubtitleGeneraterTaskRunner implements Runnable {
 			case AppConstants.GE:
 				setConfigurartionLanguage(configuration, AppConstants.PATH_ACCOUSITC_GE, AppConstants.PATH_DICT_GE, AppConstants.PATH_LANGUAGE_MODEL_GE);
 				break;
-			case AppConstants.RU:
-				setConfigurartionLanguage(configuration, AppConstants.PATH_ACCOUSITC_RU, AppConstants.PATH_DICT_RU, AppConstants.PATH_LANGUAGE_MODEL_RU);
+			case AppConstants.IT:
+				setConfigurartionLanguage(configuration, AppConstants.PATH_ACCOUSITC_IT, AppConstants.PATH_DICT_IT, AppConstants.PATH_LANGUAGE_MODEL_IT);
 				break;
 
 			default:
@@ -136,6 +131,7 @@ public class SubtitleGeneraterTaskRunner implements Runnable {
 				SpeechResult result;
 
 				int line_number = 1;
+				System.out.println("VTT FIle name is "+videoFileName.substring(0, videoFileName.length() - 4) +"_"+getLanguage()+ ".vtt");
 				PrintWriter writer = new PrintWriter(videoFileName.substring(0, videoFileName.length() - 4) +"_"+getLanguage()+ ".vtt",
 						"UTF-8");
 				writer.println("WEBVTT");
@@ -163,8 +159,6 @@ public class SubtitleGeneraterTaskRunner implements Runnable {
 				e.printStackTrace();
 			}
 
-		} catch (InterruptedException e) {
-			e.printStackTrace();
 		} catch (IllegalStateException e1) {
 			// TODO Auto-generated catch block
 			e1.printStackTrace();
@@ -182,7 +176,7 @@ public class SubtitleGeneraterTaskRunner implements Runnable {
 
 	public File extractAudioFromVideo(File file2) {
 		File audioFile = new File(file2.getAbsolutePath().substring(0, file2.getAbsolutePath().length() - 4) + ".wav");
-System.out.println("audioFile "+audioFile.getAbsolutePath());
+		System.out.println("audioFile "+audioFile.getAbsolutePath());
 		AudioAttributes audio = new AudioAttributes();
 		audio.setCodec(AppConstants.AUDIO_CODEC);
 		audio.setBitRate(AppConstants.BIT_RATE);
