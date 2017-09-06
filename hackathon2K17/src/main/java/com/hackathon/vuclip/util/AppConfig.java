@@ -13,8 +13,8 @@ import org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor;
 		@Bean
 		public ThreadPoolTaskExecutor taskExecutor() {
 			ThreadPoolTaskExecutor pool = new ThreadPoolTaskExecutor();
-			pool.setCorePoolSize(5);
-			pool.setMaxPoolSize(10);
+			pool.setCorePoolSize(8);
+			pool.setMaxPoolSize(15);
 			pool.setWaitForTasksToCompleteOnShutdown(true);
 			return pool;
 		}
