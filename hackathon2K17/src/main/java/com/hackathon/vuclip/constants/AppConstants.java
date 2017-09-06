@@ -20,7 +20,7 @@ public class AppConstants {
 	public static final String HI = "HI";
 	public static final String FR = "FR";
 	public static final String GE = "GE";
-	public static final String RU = "RU";
+	public static final String IT = "IT";
 
 	public static final String PATH_LANGUAGE_MODEL_EN = "resource:/edu/cmu/sphinx/models/en-us/en-us.lm.bin";
 	public static final String PATH_DICT_EN = "resource:/edu/cmu/sphinx/models/en-us/cmudict-en-us.dict";
@@ -34,13 +34,13 @@ public class AppConstants {
 	public static final String PATH_DICT_FR = "resource:/edu/cmu/sphinx/models/french/fr.dict";
 	public static final String PATH_LANGUAGE_MODEL_FR = "resource:/edu/cmu/sphinx/models/french/fr-small.lm.bin";
 	
-	public static final String PATH_ACCOUSITC_GE = "resource:/edu/cmu/sphinx/models/french/cmusphinx-fr-ptm-5.2";
-	public static final String PATH_DICT_GE = "resource:/edu/cmu/sphinx/models/french/fr.dict";
-	public static final String PATH_LANGUAGE_MODEL_GE = "resource:/edu/cmu/sphinx/models/french/fr-small.lm.bin";
+	public static final String PATH_ACCOUSITC_GE = "resource:/edu/cmu/sphinx/models/german/cmusphinx-de-ptm-voxforge-5.2";
+	public static final String PATH_DICT_GE = "resource:/edu/cmu/sphinx/models/german/de.dic";
+	public static final String PATH_LANGUAGE_MODEL_GE = "resource:/edu/cmu/sphinx/models/german/de.lm.bin";
 	
-	public static final String PATH_ACCOUSITC_RU = "resource:/edu/cmu/sphinx/models/french/cmusphinx-fr-ptm-5.2";
-	public static final String PATH_DICT_RU = "resource:/edu/cmu/sphinx/models/french/fr.dict";
-	public static final String PATH_LANGUAGE_MODEL_RU = "resource:/edu/cmu/sphinx/models/french/fr-small.lm.bin";
+	public static final String PATH_ACCOUSITC_IT = "resource:/edu/cmu/sphinx/models/italian/voxforge_it_sphinx.cd_cont_2000";
+	public static final String PATH_DICT_IT = "resource:/edu/cmu/sphinx/models/italian/etc/voxforge_it_sphinx.dic";
+	public static final String PATH_LANGUAGE_MODEL_IT = "resource:/edu/cmu/sphinx/models/italian/etc/voxforge_it_sphinx.lm";
 
 	
 }

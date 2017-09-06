@@ -2,6 +2,7 @@
 
 <html lang="en">
 <head>
+<link rel="icon" href="images/favicon.png" type="image/png">
 <meta charset="utf-8">
 <title>Video Player</title>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
@@ -23,6 +24,10 @@
 
 .hide {
 	display: none;
+}
+
+.mdl-layout__header .mdl-layout__drawer-button{
+	color:black;
 }
 
 </style>
@@ -55,20 +60,16 @@
 	class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
 	<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
 		<header
-			class="mdl-layout__header mdl-layout__header--scroll mdl-color--primary">
+			class="mdl-layout__header mdl-layout__header--scroll mdl-color--white">
 			<div class="mdl-layout--large-screen-only mdl-layout__header-row">
-			</div>
-			<div class="mdl-layout--large-screen-only mdl-layout__header-row">
-				<img src="images/footer-logo.png" alt="vuclip Smart Alert" />
-				<h4 style="margin-left: 20%;">Video Library</h4>
-			</div>
-			<div class="mdl-layout--large-screen-only mdl-layout__header-row">
+				<img src="images/vuclip-logo.png" alt="vuclip Smart Alert" />
+				<h4 class="mdl-color-text--orange" style="margin-left: 30%;">Video Library</h4>
 			</div>
 		</header>
 
 		<div class="mdl-layout__drawer">
-			<div class="avatar">
-				<span class="mdl-layout-title"><img src="images/footer-logo.png" alt="vuclip Smart Alert" /></span>
+			<div class="avatar mdl-color--black">
+				<span class="mdl-layout-title"><img style="margin-left: 20%;" src="images/vuclip-logo.png" alt="vuclip Smart Alert" /></span>
 			</div>
 			<nav class="mdl-navigation">
 				<a class="mdl-navigation__link" href="/upload">Upload</a> <a
@@ -151,14 +152,11 @@
 			<script src="js/video-player.js"></script>
 
 		</div>
-
 		</main>
-
-
 		<footer class="mdl-mega-footer">
 			<p>All rights reserved by @SaaStars team</p>
 		</footer>
-		</main>
+		
 	</div>
 	<script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
 	<script
