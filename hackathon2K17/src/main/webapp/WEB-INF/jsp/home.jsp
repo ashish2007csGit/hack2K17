@@ -111,21 +111,17 @@
 								}
 								   //video.play();
 								 var list = $(".subtitles-menu");
-								 var len = list.length;
-								 for(i=0;i<len;i++){
-									 
-								 }
-								 var length = subButtons.length;
-								 for(i=0;i<length;i++){
+								 
+								 for(i=0;i<subButtons.length;i++){
 									 list.children().eq(subButtons[i]).remove();
 									 var newArr = [];
-									 for(i=0;i<subButtons.length;i++){
-										 newArr.push(subButtons[i+1] -1);
+									 for(j=0;j<subButtons.length;j++){
+										 newArr.push(subButtons[j] -1);
 									 }
 									 subButtons = newArr;
 								 }
 								 
-								console.log(subButtons);
+								//console.log(subButtons);
 								$("#menu").addClass("hide");
 								$("#player").removeClass("hide");
 					    }
